@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   background-color: #1445b3;
@@ -12,7 +16,7 @@ nav {
 
 .img-tp {
   width: 50px;
-  height: 50px; }
+  height: 20px; }
 
 img {
   width: 100%; }
@@ -57,6 +61,91 @@ a {
 
 .hamburguer {
   display: none; }
+
+#section-1-intro {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px; }
+  #section-1-intro .section-1-intro-img {
+    width: 50%; }
+  #section-1-intro .section-1-intro-title {
+    width: 50%; }
+  #section-1-intro .section-1-intro-button {
+    display: flex;
+    width: 50%;
+    justify-content: space-between; }
+  #section-1-intro .section-1-button-1 {
+    background: #007bff;
+    border: 2px solid #007bff;
+    color: #fff;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    transition: 0.5s; }
+  #section-1-intro .section-1-button-2 {
+    background: #1445b3;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    transition: 0.5s; }
+  #section-1-intro .section-1-button-1:hover {
+    background: #1445b3;
+    border: 2px solid #fff; }
+  #section-1-intro .section-1-button-2:hover {
+    background: #007bff;
+    border: 2px solid #007bff; }
+
+.imagen-intro {
+  width: 100%; }
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700; }
+  h2 span {
+    color: #74b5fc;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline; }
+
+#section-2-about {
+  background-color: #fff; }
+  #section-2-about main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #section-2-about main h3 {
+      color: #283d50;
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      margin-bottom: 20px; }
+    #section-2-about main p {
+      color: #556877;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      line-height: 1.5px; }
+
+.laqueteguste, .laquetegustedos {
+  display: flex;
+  flex-direction: row;
+  width: 50%; }
+
+.laqueteguste {
+  flex-direction: column; }
+
+.container-articles {
+  display: flex; }
 
 @media (max-width: 600px) {
   .hamburguer {
