@@ -233,6 +233,131 @@ body {
       }
     }
   }
+
+  #section-3-services {
+    background-color: #ECF5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .section-3-services-container-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+      .section-3-services-cards {
+        width: 425px;
+        height: 170px;
+        background-color: $secondary-color;
+        margin: 30px;
+        padding: 30px;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px 0 rgba(3, 43, 153, 0.1); 
+
+        .section-3-services-cards-icon {
+          display: flex;
+          align-items: center;
+          
+                   
+        }
+        
+        .section-3-services-cards-text {
+          margin-left: 10px;
+          h4 {
+            margin: 0;
+            margin-bottom: 15px;
+            font-family: $title-font;
+            font-size: 18px;
+            font-weight: 700;
+            color: #111;
+            }
+
+           p {
+            font-family: $text-font;
+            color: #444;
+            font-size: 14px;
+           }
+        }
+              
+      }
+    }
+  }
+
+  #section-4-why-choose-us {
+    background-color: #004A99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      color:$secondary-color;
+      font-family: $title-font;
+      font-size: 36px; 
+      margin-bottom: 20px;
+    }
+    p{
+      color:$secondary-color;
+      font-family: $text-font;
+      font-size: 15px;
+      line-height: 1.5px;
+      padding-bottom: 30px; 
+    }
+
+    .section-4-why-choose-us-container-box {
+      display: flex;
+      justify-content: space-around;
+      
+    
+
+      .section-4-why-choose-us-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #00458F;
+        border-radius: 10px;
+        padding: 15px; 
+        margin: 0 15px;
+        height: 320px;
+        width: 290px;
+        
+        h4 {
+          color:$secondary-color;
+          font-family: $title-font;
+          font-size: 22px; 
+          margin-bottom: 20px;
+        }
+
+        p{
+          color:#D8EAFE;
+          font-family: $text-font;
+          font-size: 15px;
+          line-height: 1.5;
+          
+        }
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+          font-family: $text-font;
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+        
+    }
+     
+
+    /* ACA ME DA ALGO ERROR Y NO LOGRO DARME CUENTA */
+    .section-4-why-choose-us-countup {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row; /* no deberia especificarse, pero de una me queda en column */
+      color: $secondary-color;
+    }
+  }
   
 
   

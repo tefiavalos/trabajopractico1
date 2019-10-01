@@ -170,6 +170,95 @@ h2 {
     #section-2-about .section-2-container-about-articles-2 .section-2-container-about-articles-2-text {
       width: 50%; }
 
+#section-3-services {
+  background-color: #ECF5FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  #section-3-services .section-3-services-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    #section-3-services .section-3-services-container-cards .section-3-services-cards {
+      width: 425px;
+      height: 170px;
+      background-color: #FFF;
+      margin: 30px;
+      padding: 30px;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px 0 rgba(3, 43, 153, 0.1); }
+      #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon {
+        display: flex;
+        align-items: center; }
+      #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text {
+        margin-left: 10px; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text h4 {
+          margin: 0;
+          margin-bottom: 15px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          color: #111; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text p {
+          font-family: "Open Sans", sans-serif;
+          color: #444;
+          font-size: 14px; }
+
+#section-4-why-choose-us {
+  background-color: #004A99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #section-4-why-choose-us h3 {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px; }
+  #section-4-why-choose-us p {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.5px;
+    padding-bottom: 30px; }
+  #section-4-why-choose-us .section-4-why-choose-us-container-box {
+    display: flex;
+    justify-content: space-around; }
+    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #00458F;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 0 15px;
+      height: 320px;
+      width: 290px; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box h4 {
+        color: #FFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        margin-bottom: 20px; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box p {
+        color: #D8EAFE;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        line-height: 1.5; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box a {
+        text-decoration: none;
+        color: #FFF;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px; }
+  #section-4-why-choose-us .section-4-why-choose-us-countup {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #FFF; }
+
 @media (max-width: 600px) {
   .hamburguer {
     display: block; }
