@@ -343,6 +343,94 @@ h2 {
         #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button button[type="submit"]:hover {
           background-color: #0067d5;
           cursor: pointer; }
+#section-7-team {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  #section-7-team h3 {
+    font-family: "Montserrat", sans-serif; }
+  #section-7-team p {
+    font-family: "Open Sans", sans-serif; }
+  #section-7-team .section-7-team-container-img {
+    display: flex; }
+    #section-7-team .section-7-team-container-img .section-7-team-images {
+      width: 255px;
+      height: 255px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      margin: 10px; }
+      #section-7-team .section-7-team-container-img .section-7-team-images img {
+        width: 100%;
+        height: 100%; }
+      #section-7-team .section-7-team-container-img .section-7-team-images .overlay {
+        background-color: rgba(0, 22, 99, 0.7);
+        /*no puedo hacer que quede transparente*/
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: #FFF;
+        height: 255px;
+        width: 255px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none; }
+    #section-7-team .section-7-team-container-img .section-7-team-images:hover .overlay {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+#section-8-our-clients {
+  background-color: #ECF5FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 60px 0px 60px; }
+  #section-8-our-clients h3 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  #section-8-our-clients p {
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+    font-size: 15px;
+    text-align: center; }
+  #section-8-our-clients .section-8-our-clients-container-box {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin: 10px 10px 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; }
+    #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards {
+      background-color: #FFF;
+      height: 160px;
+      width: 25%;
+      padding: 64px;
+      border-right: 1px solid #d6eaff;
+      border-bottom: 1px solid #d6eaff;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img {
+        transition: all 0.4s ease-in-out;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box; }
+      #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img:hover {
+        transform: scale(1.25); }
 
 @media (max-width: 600px) {
   .hamburguer {
