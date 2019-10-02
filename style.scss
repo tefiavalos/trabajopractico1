@@ -359,6 +359,56 @@ body {
       color: $secondary-color;
     }
   }
+
+  #section-7-team{
+    background-color:$secondary-color;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;
+    h3{
+      font-family:$title-font;
+    }
+    p{
+      font-family:$text-font;
+    }
+
+    .section-7-team-container-img{
+      display:flex;
+      
+      .section-7-team-images{
+        width: 255px;
+        height: 255px;
+        border-radius:50%;
+        background-position: center;
+        background-size:cover;
+        overflow: hidden;
+        margin:10px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        .overlay{
+          background-color: rgba(00, 22, 99, 0.7);/*no puedo hacer que quede transparente*/
+          font-family: $title-font;
+          font-weight: 700;
+          color:$secondary-color;
+          height: 255px;
+          width: 255px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          display:none;
+        }
+        }
+        .section-7-team-images:hover .overlay{
+          display:block; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+    }
+  }
   
   #section-8-our-clients {
     background-color: #ECF5FF;
