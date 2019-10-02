@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background-color: #1445b3;
+  /*background-color: $main-color;*/
   font-family: 'Montserrat', sans-serif; }
 
 nav {
@@ -212,7 +212,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  /* ACA ME DA ALGO ERROR Y NO LOGRO DARME CUENTA */ }
   #section-4-why-choose-us h3 {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
@@ -257,7 +258,91 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    /* no deberia especificarse, pero de una me queda en column */
     color: #FFF; }
+
+#contact-us {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 500px; }
+  #contact-us header {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #contact-us header h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      color: #283d50;
+      text-align: center;
+      font-weight: 500; }
+  #contact-us .contact-us__main {
+    display: flex;
+    width: 100%; }
+    #contact-us .contact-us__main .contact-us__main--left {
+      width: 50%;
+      padding: 15px; }
+      #contact-us .contact-us__main .contact-us__main--left .contact-us__map, #contact-us .contact-us__main .contact-us__main--left iframe {
+        width: 100%;
+        height: 100%;
+        border: 0; }
+    #contact-us .contact-us__main .contact-us__main--right {
+      padding: 15px;
+      width: 50%; }
+      #contact-us .contact-us__main .contact-us__main--right .contact-us__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #283d50;
+        padding: 5px; }
+        #contact-us .contact-us__main .contact-us__main--right .contact-us__information .contact-us__address,
+        #contact-us .contact-us__main .contact-us__main--right .contact-us__information .contact-us__email,
+        #contact-us .contact-us__main .contact-us__main--right .contact-us__information .contact-us__telephone {
+          display: flex;
+          align-items: center; }
+        #contact-us .contact-us__main .contact-us__main--right .contact-us__information i {
+          font-size: 32px;
+          color: #007bff; }
+        #contact-us .contact-us__main .contact-us__main--right .contact-us__information p {
+          font-size: 14px;
+          padding: 0 0 10px 36px; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form {
+        display: flex;
+        justify-content: space-between; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__name,
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__email {
+          width: 50%;
+          padding: 5px; }
+          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__name input,
+          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__email input {
+            width: 100%;
+            height: 36px; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__subject {
+        width: 100%;
+        padding: 5px; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__subject input {
+          width: 100%;
+          height: 36px; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__message {
+        width: 100%;
+        padding: 5px; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__message textarea {
+          width: 100%; }
+      #contact-us .contact-us__main .contact-us__main--right form .validation {
+        display: none; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button {
+        text-align: center; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button button[type="submit"] {
+          background: #007bff;
+          font-family: "Open Sans", sans-serif;
+          border: 0;
+          border-radius: 20px;
+          padding: 8px 30px;
+          color: #fff;
+          transition: 0.3s; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button button[type="submit"]:hover {
+          background-color: #0067d5;
+          cursor: pointer; }
 
 @media (max-width: 600px) {
   .hamburguer {
