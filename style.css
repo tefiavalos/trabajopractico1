@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  /*background-color: $main-color;*/
+  background-color: #1445b3;
   font-family: 'Montserrat', sans-serif; }
 
 nav {
@@ -261,11 +261,186 @@ h2 {
     /* no deberia especificarse, pero de una me queda en column */
     color: #FFF; }
 
+#section-5-portfolio {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  #section-5-portfolio .section-5-portfolio-title-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    #section-5-portfolio .section-5-portfolio-title-and-button h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: #283d50;
+      /* TAL VEZ DECLARARLO PARA EL H3*/ }
+    #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px; }
+      #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button button {
+        background-color: #ECF5FF;
+        border-radius: 50px;
+        color: #007BFF;
+        padding: 6px 20px;
+        margin: 10px;
+        border: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px; }
+      #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button button:hover, #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button .section-5-portfolio-button-all {
+        background-color: #007BFF;
+        color: #FFF; }
+  #section-5-portfolio .section-5-portfolio-container-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 60px; }
+    #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img {
+      width: 350px;
+      height: 250px;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      position: relative; }
+      #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img img {
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+      #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay {
+        background-color: rgba(0, 22, 99, 0.5);
+        color: #FFF;
+        position: relative;
+        width: 350px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none; }
+        #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          padding: 50px; }
+          #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info h4 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 22px;
+            margin: 0; }
+          #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info p {
+            font-family: "Open Sans", sans-serif;
+            color: #E2EFFE;
+            font-size: 14px; }
+          #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info .fas.fa-eye, #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info .fas.fa-external-link-alt {
+            color: #E2EFFE;
+            background-color: #007BFF;
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+            text-align: center;
+            padding: 10px 5px; }
+    #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img:hover .section-5-portfolio-img-overlay {
+      z-index: 2;
+      display: block; }
+
+#section-7-team {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  #section-7-team h3 {
+    font-family: "Montserrat", sans-serif; }
+  #section-7-team p {
+    font-family: "Open Sans", sans-serif; }
+  #section-7-team .section-7-team-container-img {
+    display: flex; }
+    #section-7-team .section-7-team-container-img .section-7-team-images {
+      width: 255px;
+      height: 255px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      margin: 10px; }
+      #section-7-team .section-7-team-container-img .section-7-team-images img {
+        width: 100%;
+        height: 100%; }
+      #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay {
+        background-color: rgba(0, 22, 99, 0.7);
+        /*no puedo hacer que quede transparente*/
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: #FFF;
+        height: 255px;
+        width: 255px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none; }
+    #section-7-team .section-7-team-container-img .section-7-team-images:hover .section-7-team-images-overlay {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+#section-8-our-clients {
+  background-color: #ECF5FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 60px 0px 60px; }
+  #section-8-our-clients h3 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  #section-8-our-clients p {
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+    font-size: 15px;
+    text-align: center; }
+  #section-8-our-clients .section-8-our-clients-container-box {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin: 10px 10px 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; }
+    #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards {
+      background-color: #FFF;
+      height: 160px;
+      width: 25%;
+      padding: 64px;
+      border-right: 1px solid #d6eaff;
+      border-bottom: 1px solid #d6eaff;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img {
+        transition: all 0.4s ease-in-out;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box; }
+      #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img:hover {
+        transform: scale(1.25); }
+
 #contact-us {
-  background-color: #ffffff;
+  background-color: #FFF;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 500px; }
+  overflow: hidden; }
   #contact-us header {
     display: flex;
     justify-content: center;
@@ -343,94 +518,6 @@ h2 {
         #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button button[type="submit"]:hover {
           background-color: #0067d5;
           cursor: pointer; }
-#section-7-team {
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px; }
-  #section-7-team h3 {
-    font-family: "Montserrat", sans-serif; }
-  #section-7-team p {
-    font-family: "Open Sans", sans-serif; }
-  #section-7-team .section-7-team-container-img {
-    display: flex; }
-    #section-7-team .section-7-team-container-img .section-7-team-images {
-      width: 255px;
-      height: 255px;
-      border-radius: 50%;
-      background-position: center;
-      background-size: cover;
-      overflow: hidden;
-      margin: 10px; }
-      #section-7-team .section-7-team-container-img .section-7-team-images img {
-        width: 100%;
-        height: 100%; }
-      #section-7-team .section-7-team-container-img .section-7-team-images .overlay {
-        background-color: rgba(0, 22, 99, 0.7);
-        /*no puedo hacer que quede transparente*/
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        color: #FFF;
-        height: 255px;
-        width: 255px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: none; }
-    #section-7-team .section-7-team-container-img .section-7-team-images:hover .overlay {
-      display: block;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-
-#section-8-our-clients {
-  background-color: #ECF5FF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0px 60px 0px 60px; }
-  #section-8-our-clients h3 {
-    color: #283d50;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: 400; }
-  #section-8-our-clients p {
-    padding-bottom: 60px;
-    color: #556877;
-    width: 50%;
-    font-size: 15px;
-    text-align: center; }
-  #section-8-our-clients .section-8-our-clients-container-box {
-    border-top: 1px solid #d6eaff;
-    border-left: 1px solid #d6eaff;
-    margin: 10px 10px 30px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; }
-    #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards {
-      background-color: #FFF;
-      height: 160px;
-      width: 25%;
-      padding: 64px;
-      border-right: 1px solid #d6eaff;
-      border-bottom: 1px solid #d6eaff;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; }
-      #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img {
-        transition: all 0.4s ease-in-out;
-        max-width: 100%;
-        height: auto;
-        box-sizing: border-box; }
-      #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img:hover {
-        transform: scale(1.25); }
 
 @media (max-width: 600px) {
   .hamburguer {
