@@ -355,14 +355,21 @@ a {
   align-items: center;
   padding: 20px; }
   #section-7-team h3 {
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 20px; }
   #section-7-team p {
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px; }
   #section-7-team .section-7-team-container-img {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     #section-7-team .section-7-team-container-img .section-7-team-images {
       width: 255px;
       height: 255px;
+      position: relative;
       border-radius: 50%;
       background-position: center;
       background-size: cover;
@@ -370,24 +377,37 @@ a {
       margin: 10px; }
       #section-7-team .section-7-team-container-img .section-7-team-images img {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        position: absolute;
+        object-fit: cover; }
       #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay {
-        background-color: rgba(0, 22, 99, 0.7);
-        /*no puedo hacer que quede transparente*/
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        background-color: rgba(0, 22, 99, 0.5);
         color: #FFF;
-        height: 255px;
+        position: relative;
         width: 255px;
+        height: 255px;
         display: flex;
         justify-content: center;
         align-items: center;
-        display: none; }
+        flex-direction: column;
+        display: none;
+        transition: all 2s linear; }
+        #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-overlay-info {
+          display: flex;
+          align-items: center;
+          flex-direction: column; }
+          #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-overlay-info h3 {
+            margin: 50px 0 10px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            font-weight: 600; }
+          #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-overlay-info p {
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px; }
     #section-7-team .section-7-team-container-img .section-7-team-images:hover .section-7-team-images-overlay {
-      display: block;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+      z-index: 2;
+      display: block; }
 
 #section-8-our-clients {
   background-color: #ECF5FF;
