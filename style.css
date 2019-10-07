@@ -169,10 +169,21 @@ a {
 
 #section-3-services {
   background-color: #ECF5FF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  padding: 60px; }
+  #section-3-services header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #section-3-services header h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      color: #283d50;
+      text-align: center;
+      font-weight: 500; }
+    #section-3-services header p {
+      text-align: center;
+      color: #556877; }
   #section-3-services .section-3-services-container-cards {
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +201,20 @@ a {
       #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon {
         display: flex;
         align-items: center; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon i {
+          font-size: 64px; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-chart-line {
+          color: #ff689b; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-bookmark {
+          color: #e9bf06; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-tachometer-alt {
+          color: #41cf2e; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-sticky-note {
+          color: #3fcdc7; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-globe {
+          color: #d6ff22; }
+        #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-clock {
+          color: #4680ff; }
       #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text {
         margin-left: 10px; }
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text h4 {
@@ -272,7 +297,7 @@ a {
     #section-5-portfolio .section-5-portfolio-title-and-button h3 {
       font-family: "Montserrat", sans-serif;
       font-size: 36px;
-      font-weight: 400;
+      font-weight: 500;
       color: #283d50;
       /* TAL VEZ DECLARARLO PARA EL H3*/ }
     #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button {

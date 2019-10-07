@@ -228,17 +228,29 @@ body {
 
   #section-3-services {
     background-color: #ECF5FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+    padding: 60px;
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h3 {
+        font-family: $title-font;
+        font-size: 36px;
+        color: #283d50;
+        text-align: center;
+        font-weight: 500;
+      }
+      p {
+        text-align: center;
+        color: #556877;
+      }
+    }
     .section-3-services-container-cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      
       .section-3-services-cards {
         width: 425px;
         height: 170px;
@@ -248,14 +260,31 @@ body {
         display: flex;
         border-radius: 10px;
         box-shadow: 0 10px 30px 0 rgba(3, 43, 153, 0.1); 
-
         .section-3-services-cards-icon {
           display: flex;
           align-items: center;
-          
-                   
+          i {
+            font-size: 64px;
+          }
+          .fa-chart-line {
+            color: #ff689b;
+          }
+          .fa-bookmark {
+            color: #e9bf06;
+          } 
+          .fa-tachometer-alt {
+            color: #41cf2e;
+          }
+          .fa-sticky-note {
+            color: #3fcdc7;
+          }
+          .fa-globe {
+            color: #d6ff22;
+          }
+          .fa-clock {
+            color: #4680ff;
+          }
         }
-        
         .section-3-services-cards-text {
           margin-left: 10px;
           h4 {
@@ -266,15 +295,12 @@ body {
             font-weight: 700;
             color: #111;
             }
-
-           p {
+          p {
             font-family: $text-font;
             color: #444;
             font-size: 14px;
-
-           }
-        }
-              
+          }
+        }  
       }
     }
   }
@@ -367,7 +393,7 @@ body {
       h3{
         font-family:$title-font;
         font-size: 36px;
-        font-weight: 400;
+        font-weight: 500;
         color: #283d50; /* TAL VEZ DECLARARLO PARA EL H3*/
       }
       .section-5-portfolio-button {
