@@ -70,53 +70,51 @@ a {
   padding: 60px 40px; }
   #section-1-intro .section-1-intro-img {
     width: 50%; }
+    #section-1-intro .section-1-intro-img .imagen-intro {
+      width: 100%; }
   #section-1-intro .section-1-intro-title {
     width: 50%; }
-  #section-1-intro .section-1-intro-button {
-    display: flex;
-    width: 50%;
-    justify-content: space-between; }
-  #section-1-intro .section-1-button-1 {
-    background: #007bff;
-    border: 2px solid #007bff;
-    color: #FFF;
-    border-radius: 50px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    transition: 0.5s; }
-  #section-1-intro .section-1-button-2 {
-    background: #1445b3;
-    border: 2px solid #FFF;
-    color: #FFF;
-    border-radius: 50px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    transition: 0.5s; }
-  #section-1-intro .section-1-button-1:hover {
-    background: #1445b3;
-    border: 2px solid #FFF; }
-  #section-1-intro .section-1-button-2:hover {
-    background: #007bff;
-    border: 2px solid #007bff; }
-
-.imagen-intro {
-  width: 100%; }
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #FFF;
-  font-size: 48px;
-  font-weight: 700; }
-  h2 span {
-    color: #74b5fc;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: underline; }
+    #section-1-intro .section-1-intro-title h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #FFF;
+      font-size: 48px;
+      font-weight: 700; }
+      #section-1-intro .section-1-intro-title h2 span {
+        color: #74b5fc;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: underline; }
+    #section-1-intro .section-1-intro-title .section-1-intro-button {
+      display: flex;
+      width: 50%;
+      justify-content: space-between; }
+      #section-1-intro .section-1-intro-title .section-1-intro-button .section-1-button-1 {
+        background: #007bff;
+        border: 2px solid #007bff;
+        color: #FFF;
+        border-radius: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        transition: 0.5s; }
+      #section-1-intro .section-1-intro-title .section-1-intro-button .section-1-button-2 {
+        background: #1445b3;
+        border: 2px solid #FFF;
+        color: #FFF;
+        border-radius: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        transition: 0.5s; }
+    #section-1-intro .section-1-intro-title .section-1-button-1:hover {
+      background: #1445b3;
+      border: 2px solid #FFF; }
+    #section-1-intro .section-1-intro-title .section-1-button-2:hover {
+      background: #007bff;
+      border: 2px solid #007bff; }
 
 #section-2-about {
   background-color: #FFF;
@@ -373,7 +371,8 @@ h2 {
       margin: 10px; }
       #section-7-team .section-7-team-container-img .section-7-team-images img {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        object-fit: cover; }
       #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay {
         background-color: rgba(0, 22, 99, 0.7);
         /*no puedo hacer que quede transparente*/
