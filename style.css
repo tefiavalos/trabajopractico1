@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -70,53 +69,51 @@ a {
   padding: 60px 40px; }
   #section-1-intro .section-1-intro-img {
     width: 50%; }
+    #section-1-intro .section-1-intro-img .imagen-intro {
+      width: 100%; }
   #section-1-intro .section-1-intro-title {
     width: 50%; }
-  #section-1-intro .section-1-intro-button {
-    display: flex;
-    width: 50%;
-    justify-content: space-between; }
-  #section-1-intro .section-1-button-1 {
-    background: #007bff;
-    border: 2px solid #007bff;
-    color: #FFF;
-    border-radius: 50px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    transition: 0.5s; }
-  #section-1-intro .section-1-button-2 {
-    background: #1445b3;
-    border: 2px solid #FFF;
-    color: #FFF;
-    border-radius: 50px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    transition: 0.5s; }
-  #section-1-intro .section-1-button-1:hover {
-    background: #1445b3;
-    border: 2px solid #FFF; }
-  #section-1-intro .section-1-button-2:hover {
-    background: #007bff;
-    border: 2px solid #007bff; }
-
-.imagen-intro {
-  width: 100%; }
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #FFF;
-  font-size: 48px;
-  font-weight: 700; }
-  h2 span {
-    color: #74b5fc;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: underline; }
+    #section-1-intro .section-1-intro-title h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #FFF;
+      font-size: 48px;
+      font-weight: 700; }
+      #section-1-intro .section-1-intro-title h2 span {
+        color: #74b5fc;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: underline; }
+    #section-1-intro .section-1-intro-title .section-1-intro-button {
+      display: flex;
+      width: 50%;
+      justify-content: space-between; }
+      #section-1-intro .section-1-intro-title .section-1-intro-button .section-1-button-1 {
+        background: #007bff;
+        border: 2px solid #007bff;
+        color: #FFF;
+        border-radius: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        transition: 0.5s; }
+      #section-1-intro .section-1-intro-title .section-1-intro-button .section-1-button-2 {
+        background: #1445b3;
+        border: 2px solid #FFF;
+        color: #FFF;
+        border-radius: 50px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        transition: 0.5s; }
+    #section-1-intro .section-1-intro-title .section-1-button-1:hover {
+      background: #1445b3;
+      border: 2px solid #FFF; }
+    #section-1-intro .section-1-intro-title .section-1-button-2:hover {
+      background: #007bff;
+      border: 2px solid #007bff; }
 
 #section-2-about {
   background-color: #FFF;
@@ -443,7 +440,8 @@ h2 {
 #contact-us {
   background-color: #FFF;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 60px 0; }
   #contact-us header {
     display: flex;
     justify-content: center;
@@ -483,42 +481,48 @@ h2 {
           color: #007bff; }
         #contact-us .contact-us__main .contact-us__main--right .contact-us__information p {
           font-size: 14px;
-          padding: 0 0 10px 36px; }
+          padding: 0 0 10px 25px; }
       #contact-us .contact-us__main .contact-us__main--right form .contact-us__form {
         display: flex;
         justify-content: space-between; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__name,
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__email {
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name,
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email {
           width: 50%;
           padding: 5px; }
-          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__name input,
-          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us-form__email input {
+          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name input,
+          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email input {
             width: 100%;
-            height: 36px; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__subject {
+            height: 36px;
+            padding: 5px;
+            font-family: "Montserrat", sans-serif; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--subject {
         width: 100%;
         padding: 5px; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__subject input {
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--subject input {
           width: 100%;
-          height: 36px; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__message {
+          height: 36px;
+          padding: 5px;
+          font-family: "Montserrat", sans-serif; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--message {
         width: 100%;
         padding: 5px; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__message textarea {
-          width: 100%; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--message textarea {
+          width: 100%;
+          padding: 5px;
+          font-family: "Montserrat", sans-serif; }
       #contact-us .contact-us__main .contact-us__main--right form .validation {
         display: none; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button {
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--button {
         text-align: center; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button button[type="submit"] {
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--button button[type="submit"] {
           background: #007bff;
-          font-family: "Open Sans", sans-serif;
+          font-family: "Montserrat", sans-serif;
           border: 0;
           border-radius: 20px;
           padding: 8px 30px;
           color: #fff;
           transition: 0.3s; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us-form__button button[type="submit"]:hover {
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--button button[type="submit"]:hover {
           background-color: #0067d5;
           cursor: pointer; }
 
@@ -526,4 +530,21 @@ h2 {
   .hamburguer {
     display: block; }
   .menu-pc {
-    display: none; } }
+    display: none; }
+  #contact-us .contact-us__main .contact-us__main--right .contact-us__information {
+    flex-direction: column;
+    align-items: flex-start; } }
+
+@media (max-width: 900px) {
+  #contact-us .contact-us__main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    #contact-us .contact-us__main .contact-us__main--left {
+      width: 100%; }
+    #contact-us .contact-us__main .contact-us__main--right {
+      width: 100%; }
+      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form {
+        flex-direction: column; }
+        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name, #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email {
+          width: 100%; } }
