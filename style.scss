@@ -480,45 +480,70 @@ body {
     padding: 20px;
     h3{
       font-family:$title-font;
+      font-size: 36px;
+      font-weight: 500;
+      margin: 20px;
     }
     p{
       font-family:$text-font;
+      font-weight: 400;
+      font-size: 15px;
     }
 
     .section-7-team-container-img{
       display:flex;
+      flex-wrap:wrap;
       
       .section-7-team-images{
         width: 255px;
         height: 255px;
+        position: relative;
         border-radius:50%;
         background-position: center;
         background-size:cover;
         overflow: hidden;
         margin:10px;
+        
         img{
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          position: absolute;
+          object-fit: cover;          
         }
         .section-7-team-images-overlay{
-          background-color: rgba(00, 22, 99, 0.7);/*no puedo hacer que quede transparente*/
-          font-family: $title-font;
-          font-weight: 700;
-          color:$secondary-color;
-          height: 255px;
+          background-color: rgba(00, 22, 99, 0.5);
+          color: $secondary-color;
+          position: relative;
           width: 255px;
+          height: 255px; 
           display: flex;
           justify-content: center;
           align-items: center;
-          display:none;
+          flex-direction: column;
+          display: none;
+          transition: all 2s linear;
+          .section-7-team-images-overlay-info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h3{
+              margin: 50px 0 10px;
+              font-family:$title-font;
+              font-size:18px;
+              font-weight: 600;
+            }
+            p{
+              margin:0;
+              font-family:$text-font;
+              font-size:15px;
+            }
+          }
         }
-        }
-        .section-7-team-images:hover .section-7-team-images-overlay{
-          display:block; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        
+      }
+      .section-7-team-images:hover .section-7-team-images-overlay{
+        z-index: 2;
+        display: block;
       }
     }
   }
@@ -580,7 +605,10 @@ body {
           img:hover{
             transform: scale(1.25);
           }
-          }
+        }
+      
+      @media (max-width:600px){}
+      @media (max-width:900px){}
       }
   }
 
