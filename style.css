@@ -365,8 +365,7 @@ a {
     font-weight: 400;
     font-size: 15px; }
   #section-7-team .section-7-team-container-img {
-    display: flex;
-    flex-wrap: wrap; }
+    display: flex; }
     #section-7-team .section-7-team-container-img .section-7-team-images {
       width: 255px;
       height: 255px;
@@ -409,6 +408,12 @@ a {
     #section-7-team .section-7-team-container-img .section-7-team-images:hover .section-7-team-images-overlay {
       z-index: 2;
       display: block; }
+  @media (max-width: 600px) {
+    #section-7-team .section-7-team-images {
+      width: 100%; } }
+  @media (max-width: 900px) {
+    #section-7-team .section-7-team-images {
+      width: 50%; } }
 
 #section-8-our-clients {
   background-color: #ECF5FF;
