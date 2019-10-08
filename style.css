@@ -344,7 +344,8 @@ a {
       align-items: center; }
       #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img img {
         max-width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         position: absolute; }
       #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay {
         background-color: rgba(0, 22, 99, 0.5);
@@ -699,4 +700,146 @@ a {
       #contact-us .contact-us__main .contact-us__main--right form .contact-us__form {
         flex-direction: column; }
         #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name, #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email {
-          width: 100%; } }
+          width: 100%; }
+  .arrow {
+    border: none;
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .arrow:hover {
+    cursor: pointer; }
+  .footer-container {
+    background-color: #004A99;
+    display: flex;
+    padding: 50px; }
+  .bloque1, .bloque2 {
+    display: flex; }
+  .wayne {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    width: 70%;
+    padding-left: 45px;
+    padding-right: 15px;
+    line-height: 0.75cm; }
+  .wayne h2 {
+    font-size: 34px; }
+  .useful-links {
+    width: 30%; }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1cm; }
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s; }
+  ul li a:hover {
+    color: #0564CA; }
+  .contact-us {
+    width: 250px; }
+  p {
+    line-height: 0.75cm; }
+  .contact-us span {
+    font-weight: bold; }
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .iconos {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s; }
+  .iconos:hover {
+    background-color: #0564ca; }
+  .newsletter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .newsletter p {
+    margin-top: 0; }
+  form {
+    display: flex; }
+  input {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .submit {
+    background-color: #007bff;
+    color: #ffffff;
+    width: 30%;
+    transition: all 0.3s; }
+  .submit:hover {
+    cursor: pointer;
+    background-color: #0564CA; }
+  .useful-links, .contact-us, .newsletter {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .copyright {
+    height: 100px;
+    background-color: #00428a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .copyright p {
+    margin: 5px; } }
+
+@media (max-width: 900px) and (max-width: 900px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .bloque1, .bloque2 {
+    display: flex; }
+  .bloque1 {
+    margin-bottom: 20px; }
+  .wayne {
+    padding: 0;
+    margin-right: 20px; }
+  .wayne h2 {
+    margin-top: 0; }
+  .wayne, .useful-links, .contact-us, .newsletter {
+    width: 50%; }
+  .icons {
+    width: 100%; }
+  .contact-us, .useful-links, .newsletter {
+    padding-left: 0; } }
+
+@media (max-width: 900px) and (max-width: 600px) {
+  .footer-container, .bloque1, .bloque2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .wayne, .useful-links, .contact-us, .newsletter {
+    margin-bottom: 20px; }
+  .wayne {
+    width: 100%;
+    margin-left: 0; }
+  .newsletter {
+    padding-left: 0;
+    width: 100%; }
+  .icons {
+    width: 100%; }
+  form {
+    width: 100%; } }
