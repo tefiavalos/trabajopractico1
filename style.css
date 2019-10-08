@@ -44,7 +44,7 @@ nav {
       transition: 0.3s; }
     nav .menu-pc a:hover {
       color: #007BFF; }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     nav .menu-pc {
       display: none; } }
 
@@ -563,16 +563,6 @@ a {
     #section-7-team .section-7-team-container-img .section-7-team-images:hover .section-7-team-images-overlay {
       z-index: 2;
       display: block; }
-
-@media (max-width: 900px) {
-  .section-7-team-images {
-    display: flex;
-    flex-direction: column; } }
-
-@media (max-width: 600px) {
-  .section-7-team-images {
-    display: flex;
-    flex-direction: column; } }
 
 #section-8-our-clients {
   background-color: #ECF5FF;
