@@ -759,9 +759,12 @@ body {
       }
     
     @media(max-width:900px){
-        .section-7-team-images{
+        .section-7-team-container-img{
           display:flex;
-          flex-direction:column;        }
+          flex-direction:column; 
+          
+
+         }
     }
     @media(max-width:600px){
       .section-7-team-images{

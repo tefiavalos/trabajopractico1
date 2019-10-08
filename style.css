@@ -564,6 +564,19 @@ a {
       z-index: 2;
       display: block; }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 900px) {
+  .section-7-team-container-img {
+    display: flex;
+    flex-direction: column; } }
+
+@media (max-width: 600px) {
+  .section-7-team-images {
+    display: flex;
+    flex-direction: column; } }
+
+>>>>>>> 0e586c43d385903670634cd8b36f91c5ec839ba2
 #section-8-our-clients {
   background-color: #ECF5FF;
   display: flex;
