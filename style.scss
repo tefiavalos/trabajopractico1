@@ -8,6 +8,9 @@ $text-font: 'Open Sans', sans-serif;
 *{
   box-sizing:border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background-color: $main-color;
@@ -16,21 +19,59 @@ body {
   
   nav {
     background-color: $secondary-color;
-    padding: 20px;
+    padding: 20px 60px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
-  }
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+      
+    .img-tp{
+        img {
+        margin: 7px 0px;
+        max-height: 26px;
+        }
+    
+      .img-logo{
+        max-width:100%;
+        height: auto;
+        cursor: pointer;
+        }
+      }
 
-  .img-tp{
-      width: 50px;
-      height: 20px;
+      .menu-pc {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.5s;
+
+          a {
+            color: #004289;
+            font-family: $title-font;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: 0.3s;
+          }
+          a:hover {
+            color: #007BFF;
+          }
+      }
+
+      @media (max-width: 900px) {
+        .menu-pc {
+          display: none;
+        }
+      }
+     
     
   }
 
-  img{
-     width:100%;
-  }
-  
   #menu {
     background-color: rgba(19, 39, 57, 0.8);
     color: $secondary-color;
@@ -40,8 +81,8 @@ body {
     left: -200px;
     height: 100%;
     transition: all 0.5s;
-  }
-
+    }
+  
 
   a{
     font-weight: 600;
@@ -64,7 +105,7 @@ body {
     left: 0px
   }
 
-  .x{
+  .close{
     position:absolute;
     top: 20px;
     left:300px;
@@ -81,6 +122,7 @@ body {
 
   .hamburguer{
       display:none;
+      
   }
 
   #section-1-intro{
@@ -88,7 +130,7 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding: 60px 40px;
+    padding: 150px 60px 60px;
     .section-1-intro-img{
       width: 50%;
       .imagen-intro{
@@ -713,17 +755,23 @@ body {
         display: block;
       }
     }
+    
+      }
+    
+    @media(max-width:900px){
+        .section-7-team-container-img{
+          display:flex;
+          flex-direction:column; 
+          
+
+         }
+    }
     @media(max-width:600px){
       .section-7-team-images{
-        width: 100%;
+        display:flex;
+        flex-direction:column;
       }
     }
-    @media(max-width:900px){
-      .section-7-team-images{
-        width: 50%;
-      }
-  }
-  }
   
   #section-8-our-clients {
     background-color: #ECF5FF;
