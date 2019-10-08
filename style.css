@@ -183,7 +183,9 @@ a {
       font-weight: 500; }
     #section-3-services header p {
       text-align: center;
-      color: #556877; }
+      color: #556877;
+      padding-bottom: 60px;
+      width: 50%; }
   #section-3-services .section-3-services-container-cards {
     display: flex;
     flex-wrap: wrap;
@@ -197,10 +199,16 @@ a {
       padding: 30px;
       display: flex;
       border-radius: 10px;
-      box-shadow: 0 10px 30px 0 rgba(3, 43, 153, 0.1); }
+      box-shadow: 0 10px 30px 0 rgba(3, 43, 153, 0.1);
+      transition: all 0.5s;
+      position: relative;
+      overflow: hidden;
+      align-items: center; }
       #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        position: absolute;
+        left: -10px; }
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon i {
           font-size: 64px; }
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-chart-line {
@@ -216,7 +224,7 @@ a {
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-clock {
           color: #4680ff; }
       #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text {
-        margin-left: 10px; }
+        margin-left: 40px; }
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-text h4 {
           margin: 0;
           margin-bottom: 15px;
@@ -228,6 +236,8 @@ a {
           font-family: "Open Sans", sans-serif;
           color: #444;
           font-size: 14px; }
+    #section-3-services .section-3-services-container-cards .section-3-services-cards:hover {
+      transform: translateY(-5px); }
 
 #section-4-why-choose-us {
   background-color: #004A99;
