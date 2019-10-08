@@ -44,7 +44,7 @@ nav {
       transition: 0.3s; }
     nav .menu-pc a:hover {
       color: #007BFF; }
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     nav .menu-pc {
       display: none; } }
 
@@ -565,7 +565,7 @@ a {
       display: block; }
 
 @media (max-width: 900px) {
-  .section-7-team-images {
+  .section-7-team-container-img {
     display: flex;
     flex-direction: column; } }
 
