@@ -713,17 +713,20 @@ body {
         display: block;
       }
     }
+    
+      }
+    
+    @media(max-width:900px){
+        .section-7-team-images{
+          display:flex;
+          flex-direction:column;        }
+    }
     @media(max-width:600px){
       .section-7-team-images{
-        width: 100%;
+        display:flex;
+        flex-direction:column;
       }
     }
-    @media(max-width:900px){
-      .section-7-team-images{
-        width: 50%;
-      }
-  }
-  }
   
   #section-8-our-clients {
     background-color: #ECF5FF;
