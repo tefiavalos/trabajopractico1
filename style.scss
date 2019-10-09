@@ -1120,11 +1120,12 @@ body {
 #footer{
 .footer-container{
  background-color: #004A99;
- color: #ffffff;
+ color: $secondary-color;
  display:flex;
  padding: 50px;
   .bloque1 {
       display: flex;
+      width: 50%;
     .wayne{
       font-family: $title-font;
       font-size:13px;
@@ -1134,6 +1135,7 @@ body {
       line-height: 0.75cm;
         h2{
           font-size: 34px;
+          font-weight: 400;
       }
     }
     .useful-links{
@@ -1148,7 +1150,9 @@ body {
         line-height: 1cm;
         li {
           a {
+            padding:0;
             text-decoration: none;
+            font-weight: 400;
             color: #fff;
             transition: all 0.3s;
           }
@@ -1164,8 +1168,10 @@ body {
     }
   }
   .bloque2 {
+    width: 50%;
+    display:flex;
     .contact-us{
-      width: 250px;
+      width: 40%;
       font-size:14px;
       padding-left:15px;
       padding-right:15px;
@@ -1191,23 +1197,26 @@ body {
         }
         .iconos:hover {
           background-color: #0564ca;
+          cursor: pointer;
         }
       }
     }
     .newsletter{
       width: 50%;
+      height: 250px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       font-size:14px;
       padding-left:15px;
       padding-right:15px;
+      
       p {
-        margin-top: 0;
+        margin: 0 0 40px;
       }
       form {
         display: flex;
-        input{
+        input {
           display: flex;
           flex: 1;
           justify-content: center;
@@ -1215,6 +1224,7 @@ body {
           margin: 0;
           padding: 0;
           border: none;
+        }
           .submit{
             background-color: #007bff;
             color: #ffffff;
@@ -1225,7 +1235,7 @@ body {
             cursor: pointer;
             background-color: #0564CA;
           }
-        }
+        
       }
     }
   }
@@ -1247,44 +1257,52 @@ body {
 
 
 @media(max-width:900px){
-    .footer-container {
+    #footer{
+      .footer-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    
 
-    .bloque1, .bloque2 {
+        .bloque1{
         display: flex;
-    }
-
-    .bloque1 {
         margin-bottom: 20px;
-    }
+          .wayne {
+          padding: 0;
+          margin-right: 20px;
+          width:50%;
+          h2 {
+            margin-top: 0;
+            }
+          }
+          .useful-links{
+          width: 50%;
+          padding-left:0;
+          }
+        
+      }
+    
+        .bloque2{
+          .newsletter{
+          width: 50%;
+          padding-left:0;
+        }
 
-    .wayne {
-        padding: 0;
-        margin-right: 20px;
+          .contact-us{
+          width: 50%;
+          padding-left:0;
+            .icons {
+            width: 100%;
+            }
+          }
+        }
+      }
     }
-
-    .wayne h2 {
-        margin-top: 0;
-    }
-
-    .wayne, .useful-links, .contact-us,  .newsletter {
-        width: 50%;
-    }
-
-    .icons {
-        width: 100%;
-    }
-
-    .contact-us, .useful-links, .newsletter {
-        padding-left: 0;
-    }
-}
+  }
 
 @media(max-width:600px){
-    .footer-container, .bloque1, .bloque2 {
+
+    #footer, .footer-container, .bloque1, .bloque2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
