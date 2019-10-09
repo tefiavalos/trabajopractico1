@@ -558,7 +558,7 @@ body {
         justify-content: center;
         align-items: center;
         img {
-          max-width: 100%;
+          width: 100%;
           height: 100%;
           object-fit: cover;
           position: absolute;
@@ -773,7 +773,6 @@ body {
 
     .section-7-team-container-img{
       display:flex;
-      
       .section-7-team-images{
         width: 255px;
         height: 255px;
@@ -802,6 +801,7 @@ body {
           flex-direction: column;
           display: none;
           transition: all 2s linear;
+          
           .section-7-team-images-overlay-info{
             display: flex;
             align-items: center;
@@ -818,6 +818,14 @@ body {
               font-size:15px;
             }
           }
+          .section-7-team-images-ovarlay-icons{
+            display:flex;
+            justify-content:center;
+            margin: 10px 5px;
+            i{
+              margin: 5px;
+            }
+          }
         }
       }
       .section-7-team-images:hover .section-7-team-images-overlay{
@@ -825,23 +833,26 @@ body {
         display: block;
       }
     }
-    
-      }
-    
     @media(max-width:900px){
-        .section-7-team-container-img{
-          display:flex;
-          flex-direction:column; 
-          
-
-         }
-    }
-    @media(max-width:600px){
-      .section-7-team-images{
+      .section-7-team-container-img{
         display:flex;
-        flex-direction:column;
-      }
+        flex-wrap:wrap;
+        justify-content:center;
+        img{
+          width:50%;
+        }
+       }
+  }
+  @media(max-width:600px){
+    .section-7-team-container-img{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
     }
+  }
+      }
+    
+    
   
   #section-8-our-clients {
     background-color: #ECF5FF;
@@ -1106,6 +1117,7 @@ body {
     cursor: pointer;
 }
 
+#footer{
 .footer-container{
  background-color: #004A99;
  color: #ffffff;
@@ -1299,4 +1311,5 @@ body {
     form {
         width: 100%;
     }
+}
 }
