@@ -244,7 +244,7 @@ a {
 
 @media (max-width: 950px) {
   #section-2-about {
-    width: 85%; } }
+    padding: 60px 150px; } }
 
 #section-3-services {
   background-color: #ECF5FF;
