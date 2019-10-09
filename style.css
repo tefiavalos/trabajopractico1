@@ -718,7 +718,9 @@ a {
     display: none; }
   #contact-us .contact-us__main .contact-us__main--right .contact-us__information {
     flex-direction: column;
-    align-items: flex-start; } }
+    align-items: flex-start; }
+  #section-3-services .section-3-services-container-cards .section-3-services-cards {
+    width: 100%; } }
 
 @media (max-width: 900px) {
   #contact-us .contact-us__main {
