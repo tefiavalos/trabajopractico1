@@ -46,17 +46,23 @@ nav {
       color: #007BFF; }
   @media (max-width: 900px) {
     nav .menu-pc {
-      display: none; } }
+      display: none; }
+    nav nav {
+      height: 60px;
+      padding: 10px 0; } }
 
 #menu {
   background-color: rgba(19, 39, 57, 0.8);
   color: #FFF;
-  width: 200px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   top: 0;
-  left: -200px;
+  left: -350px;
   height: 100%;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  z-index: 2; }
 
 a {
   font-weight: 600;
@@ -74,16 +80,17 @@ li {
 #menu:target {
   left: 0px; }
 
-.close {
+.fas.fa-times {
   position: absolute;
   top: 20px;
   left: 300px;
-  display: none; }
+  display: none;
+  color: #FFF; }
 
-#menu:target .x {
+#menu:target .fas.fa-times {
   display: block; }
 
-a {
+> a {
   padding-left: 10px; }
 
 .hamburguer {
@@ -142,6 +149,35 @@ a {
     #section-1-intro .section-1-intro-title .section-1-button-2:hover {
       background: #007bff;
       border: 2px solid #007bff; }
+
+@media (max-width: 950px) {
+  #section-1-intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px 60px; }
+    #section-1-intro .section-1-intro-img {
+      width: 65%; }
+    #section-1-intro .section-1-intro-title {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #section-1-intro .section-1-intro-title h2 {
+        text-align: center;
+        font-size: 34px;
+        margin: 30px; }
+      #section-1-intro .section-1-intro-title .section-1-intro-button {
+        width: 60%;
+        align-items: center; } }
+
+@media (max-width: 600px) {
+  #section-1-intro {
+    padding: 100px 10px 60px; }
+    #section-1-intro .section-1-intro-img {
+      width: 80%; }
+    #section-1-intro .section-1-intro-title {
+      width: 100%; } }
 
 #section-2-about {
   background-color: #FFF;
@@ -289,7 +325,7 @@ a {
         display: flex;
         align-items: center;
         position: absolute;
-        left: -10px; }
+        left: -15px; }
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon i {
           font-size: 64px; }
         #section-3-services .section-3-services-container-cards .section-3-services-cards .section-3-services-cards-icon .fa-chart-line {
@@ -326,32 +362,37 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 60px;
-  /* ACA ME DA ALGO ERROR Y NO LOGRO DARME CUENTA */ }
+  padding: 60px; }
   #section-4-why-choose-us h3 {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     margin-bottom: 20px; }
-  #section-4-why-choose-us p {
+  #section-4-why-choose-us > p {
     color: #FFF;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
-    line-height: 1.5px;
-    padding-bottom: 30px; }
+    padding-bottom: 60px;
+    text-align: center;
+    width: 50%; }
   #section-4-why-choose-us .section-4-why-choose-us-container-box {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    text-align: center; }
     #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #00458F;
       border-radius: 10px;
-      padding: 15px;
+      padding: 35px 10px;
       margin: 0 15px;
-      height: 320px;
-      width: 290px; }
+      width: 295px;
+      transition: 0.3s ease-out; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box i {
+        font-size: 48px;
+        padding-top: 15px;
+        color: #bfddfe; }
       #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box h4 {
         color: #FFF;
         font-family: "Montserrat", sans-serif;
@@ -360,20 +401,33 @@ a {
       #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box p {
         color: #D8EAFE;
         font-family: "Open Sans", sans-serif;
-        font-size: 15px;
-        line-height: 1.5; }
-      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box a {
+        font-size: 15px; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box > a {
         text-decoration: none;
         color: #FFF;
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
-        font-size: 16px; }
+        font-size: 16px;
+        transition: 0.3s ease-in-out; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box a:hover {
+        border-bottom: #fff solid 2px; }
+    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box:hover {
+      background: #003b7a; }
   #section-4-why-choose-us .section-4-why-choose-us-countup {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    /* no deberia especificarse, pero de una me queda en column */
-    color: #FFF; }
+    justify-content: space-between;
+    color: #FFF;
+    width: 80%;
+    text-align: center;
+    padding: 40px; }
+    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 48px;
+      margin: 0; }
+    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info p {
+      font-size: 14px;
+      color: #cce5ff; }
 
 #section-5-portfolio {
   background-color: #FFF;
@@ -526,18 +580,21 @@ a {
             font-family: "Open Sans", sans-serif;
             margin-top: 15px;
             font-style: italic; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button button {
+    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label input[type="radio"] {
+      display: none; }
+    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i {
       width: 12px;
       height: 12px;
-      background-color: #DDD;
+      color: #DDD;
       margin: 0 5px;
       border-radius: 50%;
       border: none;
       cursor: pointer; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button button:hover {
-      background-color: #007BFF; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button button:active {
-      background-color: #007BFF; }
+      #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i a {
+        padding: 0;
+        margin: 0; }
+    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i:hover {
+      color: #007BFF; }
   @media (max-width: 750px) {
     #section-6-testimonials .section-6-testimonials-info {
       flex-direction: column; }
@@ -565,14 +622,19 @@ a {
   align-items: center;
   padding: 60px 60px; }
   #section-7-team h3 {
+    color: #283d50;
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 500;
-    margin: 20px; }
+    margin-bottom: 20px; }
   #section-7-team p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 15px; }
+    font-size: 15px;
+    text-align: center;
+    color: #556877;
+    padding-bottom: 60px;
+    width: 50%; }
   #section-7-team .section-7-team-container-img {
     display: flex; }
     #section-7-team .section-7-team-container-img .section-7-team-images {
@@ -590,7 +652,7 @@ a {
         position: absolute;
         object-fit: cover; }
       #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay {
-        background-color: rgba(0, 22, 99, 0.5);
+        background-color: rgba(0, 62, 128, 0.7);
         color: #FFF;
         position: relative;
         width: 255px;
@@ -599,30 +661,43 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        display: none;
-        transition: all 2s linear; }
+        opacity: 0;
+        border-radius: 50%;
+        transition: 0.5s ease; }
         #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-overlay-info {
           display: flex;
           align-items: center;
-          flex-direction: column; }
+          flex-direction: column;
+          transition: 2s ease;
+          margin-top: 50px; }
           #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-overlay-info h3 {
-            margin: 50px 0 10px;
+            color: #FFF;
+            margin: 0;
             font-family: "Montserrat", sans-serif;
             font-size: 18px;
             font-weight: 600; }
           #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-overlay-info p {
+            color: #FFF;
             margin: 0;
+            padding: 0;
+            width: 100%;
             font-family: "Open Sans", sans-serif;
-            font-size: 15px; }
+            font-size: 13px;
+            font-style: italic; }
         #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-ovarlay-icons {
           display: flex;
           justify-content: center;
-          margin: 10px 5px; }
+          margin-top: 10px;
+          transition: 2s ease; }
           #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay .section-7-team-images-ovarlay-icons i {
             margin: 5px; }
     #section-7-team .section-7-team-container-img .section-7-team-images:hover .section-7-team-images-overlay {
       z-index: 2;
-      display: block; }
+      opacity: 1; }
+    #section-7-team .section-7-team-container-img .section-7-team-images-overlay .section-7-team-images-overlay-info {
+      transform: translateY(-25px); }
+    #section-7-team .section-7-team-container-img .section-7-team-images-overlay .section-7-team-images-ovarlay-icons {
+      transform: translateY(-25px); }
   @media (max-width: 900px) {
     #section-7-team .section-7-team-container-img {
       display: flex;
@@ -684,84 +759,84 @@ a {
       #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img:hover {
         transform: scale(1.25); }
 
-#contact-us {
+#section-9-contact-us {
   background-color: #FFF;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 60px 0; }
-  #contact-us header {
+  #section-9-contact-us header {
     display: flex;
     justify-content: center;
     align-items: center; }
-    #contact-us header h3 {
+    #section-9-contact-us header h3 {
       font-family: "Montserrat", sans-serif;
       font-size: 36px;
       color: #283d50;
       text-align: center;
       font-weight: 500; }
-  #contact-us .contact-us__main {
+  #section-9-contact-us .section-9-contact-us__main {
     display: flex;
     width: 100%; }
-    #contact-us .contact-us__main .contact-us__main--left {
+    #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--left {
       width: 50%;
       padding: 15px; }
-      #contact-us .contact-us__main .contact-us__main--left .contact-us__map, #contact-us .contact-us__main .contact-us__main--left iframe {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--left .section-9-contact-us__map, #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--left iframe {
         width: 100%;
         height: 100%;
         border: 0; }
-    #contact-us .contact-us__main .contact-us__main--right {
+    #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right {
       padding: 15px;
       width: 50%; }
-      #contact-us .contact-us__main .contact-us__main--right .contact-us__information {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information {
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: #283d50;
         padding: 5px; }
-        #contact-us .contact-us__main .contact-us__main--right .contact-us__information .contact-us__address,
-        #contact-us .contact-us__main .contact-us__main--right .contact-us__information .contact-us__email,
-        #contact-us .contact-us__main .contact-us__main--right .contact-us__information .contact-us__telephone {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information .section-9-contact-us__address,
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information .section-9-contact-us__email,
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information .section-9-contact-us__telephone {
           display: flex;
           align-items: center; }
-        #contact-us .contact-us__main .contact-us__main--right .contact-us__information i {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information i {
           font-size: 32px;
           color: #007bff; }
-        #contact-us .contact-us__main .contact-us__main--right .contact-us__information p {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information p {
           font-size: 14px;
           padding: 0 0 10px 25px; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form {
         display: flex;
         justify-content: space-between; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name,
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form .section-9-contact-us__form--name,
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form .section-9-contact-us__form--email {
           width: 50%;
           padding: 5px; }
-          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name input,
-          #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email input {
+          #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form .section-9-contact-us__form--name input,
+          #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form .section-9-contact-us__form--email input {
             width: 100%;
             height: 36px;
             padding: 5px;
             font-family: "Montserrat", sans-serif; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--subject {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--subject {
         width: 100%;
         padding: 5px; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--subject input {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--subject input {
           width: 100%;
           height: 36px;
           padding: 5px;
           font-family: "Montserrat", sans-serif; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--message {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--message {
         width: 100%;
         padding: 5px; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--message textarea {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--message textarea {
           width: 100%;
           padding: 5px;
           font-family: "Montserrat", sans-serif; }
-      #contact-us .contact-us__main .contact-us__main--right form .validation {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .validation {
         display: none; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--button {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--button {
         text-align: center; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--button button[type="submit"] {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--button button[type="submit"] {
           background: #007bff;
           font-family: "Montserrat", sans-serif;
           border: 0;
@@ -769,22 +844,22 @@ a {
           padding: 8px 30px;
           color: #fff;
           transition: 0.3s; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form--button button[type="submit"]:hover {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form--button button[type="submit"]:hover {
           background-color: #0067d5;
           cursor: pointer; }
 
 @media (max-width: 960px) {
-  #contact-us .contact-us__main {
+  #section-9-contact-us .section-9-contact-us__main {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    #contact-us .contact-us__main .contact-us__main--left {
+    #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--left {
       width: 100%; }
-    #contact-us .contact-us__main .contact-us__main--right {
+    #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right {
       width: 100%; }
-      #contact-us .contact-us__main .contact-us__main--right form .contact-us__form {
+      #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form {
         flex-direction: column; }
-        #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--name, #contact-us .contact-us__main .contact-us__main--right form .contact-us__form .contact-us__form--email {
+        #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form .section-9-contact-us__form--name, #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right form .section-9-contact-us__form .section-9-contact-us__form--email {
           width: 100%; }
   #section-3-services .section-3-services-container-cards .section-3-services-cards {
     width: 45%;
@@ -795,20 +870,19 @@ a {
     display: block; }
   .menu-pc {
     display: none; }
-  #contact-us .contact-us__main .contact-us__main--right .contact-us__information {
+  #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information {
     flex-direction: column;
     align-items: flex-start; }
   #section-3-services {
     padding: 60px 20px; }
     #section-3-services .section-3-services-container-cards .section-3-services-cards {
       display: flex;
-      width: 100%;
+      width: 70%;
       padding: 20px; } }
 
 .arrow {
   border: none;
-  color: white;
-  font-size: 16px;
+  color: #FFF;
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -819,6 +893,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .arrow a {
+    padding: 0;
+    margin: 0; }
+    .arrow a i {
+      color: #FFF;
+      font-size: 16px; }
 
 .arrow:hover {
   cursor: pointer; }
