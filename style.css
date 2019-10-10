@@ -855,11 +855,12 @@ a {
 
 #footer .footer-container {
   background-color: #004A99;
-  color: #ffffff;
+  color: #FFF;
   display: flex;
   padding: 50px; }
   #footer .footer-container .bloque1 {
-    display: flex; }
+    display: flex;
+    width: 50%; }
     #footer .footer-container .bloque1 .wayne {
       font-family: "Montserrat", sans-serif;
       font-size: 13px;
@@ -868,7 +869,8 @@ a {
       padding-right: 15px;
       line-height: 0.75cm; }
       #footer .footer-container .bloque1 .wayne h2 {
-        font-size: 34px; }
+        font-size: 34px;
+        font-weight: 400; }
     #footer .footer-container .bloque1 .useful-links {
       width: 30%;
       font-size: 14px;
@@ -880,61 +882,68 @@ a {
         padding: 0;
         line-height: 1cm; }
         #footer .footer-container .bloque1 .useful-links ul li a {
+          padding: 0;
           text-decoration: none;
+          font-weight: 400;
           color: #fff;
           transition: all 0.3s; }
       #footer .footer-container .bloque1 .useful-links ul li a:hover {
         color: #0564CA; }
-  #footer .footer-container .bloque2 .contact-us {
-    width: 250px;
-    font-size: 14px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    #footer .footer-container .bloque2 .contact-us p {
-      line-height: 0.75cm; }
-      #footer .footer-container .bloque2 .contact-us p span {
-        font-weight: bold; }
-    #footer .footer-container .bloque2 .contact-us .icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      #footer .footer-container .bloque2 .contact-us .icons .iconos {
-        width: 40px;
-        height: 40px;
-        background-color: #007bff;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s; }
-      #footer .footer-container .bloque2 .contact-us .icons .iconos:hover {
-        background-color: #0564ca; }
-  #footer .footer-container .bloque2 .newsletter {
+  #footer .footer-container .bloque2 {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 14px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    #footer .footer-container .bloque2 .newsletter p {
-      margin-top: 0; }
-    #footer .footer-container .bloque2 .newsletter form {
-      display: flex; }
-      #footer .footer-container .bloque2 .newsletter form input {
+    display: flex; }
+    #footer .footer-container .bloque2 .contact-us {
+      width: 40%;
+      font-size: 14px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      #footer .footer-container .bloque2 .contact-us p {
+        line-height: 0.75cm; }
+        #footer .footer-container .bloque2 .contact-us p span {
+          font-weight: bold; }
+      #footer .footer-container .bloque2 .contact-us .icons {
         display: flex;
-        flex: 1;
-        justify-content: center;
-        height: 30px;
-        margin: 0;
-        padding: 0;
-        border: none; }
-        #footer .footer-container .bloque2 .newsletter form input .submit {
+        justify-content: space-around;
+        align-items: center; }
+        #footer .footer-container .bloque2 .contact-us .icons .iconos {
+          width: 40px;
+          height: 40px;
+          background-color: #007bff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s; }
+        #footer .footer-container .bloque2 .contact-us .icons .iconos:hover {
+          background-color: #0564ca;
+          cursor: pointer; }
+    #footer .footer-container .bloque2 .newsletter {
+      width: 50%;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 14px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      #footer .footer-container .bloque2 .newsletter p {
+        margin: 0 0 40px; }
+      #footer .footer-container .bloque2 .newsletter form {
+        display: flex; }
+        #footer .footer-container .bloque2 .newsletter form input {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          height: 30px;
+          margin: 0;
+          padding: 0;
+          border: none; }
+        #footer .footer-container .bloque2 .newsletter form .submit {
           background-color: #007bff;
           color: #ffffff;
           width: 30%;
           transition: all 0.3s; }
-        #footer .footer-container .bloque2 .newsletter form input .submit:hover {
+        #footer .footer-container .bloque2 .newsletter form .submit:hover {
           cursor: pointer;
           background-color: #0564CA; }
 
@@ -950,28 +959,33 @@ a {
     margin: 5px; }
 
 @media (max-width: 900px) {
-  #footer .footer-container {
+  #footer #footer .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  #footer .bloque1, #footer .bloque2 {
-    display: flex; }
-  #footer .bloque1 {
-    margin-bottom: 20px; }
-  #footer .wayne {
-    padding: 0;
-    margin-right: 20px; }
-  #footer .wayne h2 {
-    margin-top: 0; }
-  #footer .wayne, #footer .useful-links, #footer .contact-us, #footer .newsletter {
-    width: 50%; }
-  #footer .icons {
-    width: 100%; }
-  #footer .contact-us, #footer .useful-links, #footer .newsletter {
-    padding-left: 0; } }
+    #footer #footer .footer-container .bloque1 {
+      display: flex;
+      margin-bottom: 20px; }
+      #footer #footer .footer-container .bloque1 .wayne {
+        padding: 0;
+        margin-right: 20px;
+        width: 50%; }
+        #footer #footer .footer-container .bloque1 .wayne h2 {
+          margin-top: 0; }
+      #footer #footer .footer-container .bloque1 .useful-links {
+        width: 50%;
+        padding-left: 0; }
+    #footer #footer .footer-container .bloque2 .newsletter {
+      width: 50%;
+      padding-left: 0; }
+    #footer #footer .footer-container .bloque2 .contact-us {
+      width: 50%;
+      padding-left: 0; }
+      #footer #footer .footer-container .bloque2 .contact-us .icons {
+        width: 100%; } }
 
 @media (max-width: 600px) {
-  #footer .footer-container, #footer .bloque1, #footer .bloque2 {
+  #footer #footer, #footer .footer-container, #footer .bloque1, #footer .bloque2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
