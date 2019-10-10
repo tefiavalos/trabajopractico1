@@ -67,6 +67,10 @@ body {
         .menu-pc {
           display: none;
         }
+        nav {
+          height: 60px;
+          padding: 10px 0;
+        }
       }
      
     
@@ -75,12 +79,15 @@ body {
   #menu {
     background-color: rgba(19, 39, 57, 0.8);
     color: $secondary-color;
-    width: 200px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     top: 0;
-    left: -200px;
+    left: -350px;
     height: 100%;
     transition: all 0.5s;
+    z-index: 2;
     }
   
 
@@ -105,18 +112,19 @@ body {
     left: 0px
   }
 
-  .close{
+  .fas.fa-times{
     position:absolute;
     top: 20px;
     left:300px;
     display:none;
+    color: $secondary-color;
 }
 
-  #menu:target .x{
+  #menu:target .fas.fa-times{
       display:block;
   }
 
-  a{
+  >a{
       padding-left: 10px;
   }
 
@@ -191,6 +199,45 @@ body {
       }
     }  
  }
+
+    @media (max-width:950px) {
+        #section-1-intro {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 100px 30px 60px; 
+          .section-1-intro-img {
+            width:65%;            
+          }
+          .section-1-intro-title {
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+              h2 {
+              text-align: center;
+              font-size:34px;
+              margin: 30px;
+              }
+                .section-1-intro-button{
+                  width: 60%;
+                  align-items: center;
+                  }
+            }
+          }    
+      }
+      @media (max-width:600px) {
+        #section-1-intro {
+          padding: 100px 10px 60px;
+          .section-1-intro-img {
+            width:80%;            
+          }
+          .section-1-intro-title {
+            width:100%;
+          }
+        }
+      }
 
   #section-2-about{
     background-color: $secondary-color;
@@ -433,7 +480,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 60px;
+    padding: 60px;
 
     h3{
       color:$secondary-color;
@@ -441,31 +488,38 @@ body {
       font-size: 36px; 
       margin-bottom: 20px;
     }
-    p{
+
+    >p{
       color:$secondary-color;
       font-family: $text-font;
       font-size: 15px;
-      line-height: 1.5px;
-      padding-bottom: 30px; 
+      padding-bottom: 60px; 
+      text-align: center;
+      width: 50%;
     }
 
     .section-4-why-choose-us-container-box {
       display: flex;
       justify-content: space-around;
-      
+      text-align:center;
     
-
       .section-4-why-choose-us-box {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
         background-color: #00458F;
         border-radius: 10px;
-        padding: 15px; 
+        padding: 35px 10px; 
         margin: 0 15px;
-        height: 320px;
-        width: 290px;
-        
+        width: 295px;
+        transition: 0.3s ease-out;
+
+        i {
+          font-size: 48px;
+          padding-top: 15px;
+          color: #bfddfe;
+          }
+
         h4 {
           color:$secondary-color;
           font-family: $title-font;
@@ -477,27 +531,49 @@ body {
           color:#D8EAFE;
           font-family: $text-font;
           font-size: 15px;
-          line-height: 1.5;
-          
         }
-        a {
+
+        >a {
           text-decoration: none;
           color: $secondary-color;
           font-family: $text-font;
           font-weight: 600;
           font-size: 16px;
+          transition: 0.3s ease-in-out;
         }
+
+        a:hover{
+          border-bottom: #fff solid 2px;
+        }
+
+       
+      }
+
+      .section-4-why-choose-us-box:hover{
+        background: #003b7a;
       }
         
     }
      
-
-    /* ACA ME DA ALGO ERROR Y NO LOGRO DARME CUENTA */
     .section-4-why-choose-us-countup {
       display: flex;
-      justify-content: space-around;
-      flex-direction: row; /* no deberia especificarse, pero de una me queda en column */
+      justify-content: space-between;
       color: $secondary-color;
+      width:80%;
+      text-align: center;
+      padding:40px;
+          .section-4-why-choose-us-countup-info{
+            h4{
+              font-family: $title-font;
+              font-weight: bold;
+              font-size: 48px;
+              margin:0;
+            }
+            p{
+              font-size: 14px;
+              color: #cce5ff;
+            }
+          }
     }
   }
 
@@ -700,24 +776,32 @@ body {
         }
       
         .section-6-testimonials-info-button {
-          
-          button {
-            width: 12px;
-            height: 12px;
-            background-color: #DDD;
-            margin: 0 5px;
-            border-radius: 50%;
-            border:none;
-            cursor: pointer;
-          }
+          label {
+            input[type="radio"] {
+              display: none;
+            }
+            i {
+              width: 12px;
+              height: 12px;
+              color: #DDD;
+              margin: 0 5px;
+              border-radius: 50%;
+              border:none;
+              cursor: pointer;
+              
+                a {
+                  padding: 0;
+                  margin: 0;
+                }
+              }
       
-          button:hover{
-            background-color: #007BFF;
+              i:hover{
+              color: #007BFF;
             
             }
-          button:active{
-            background-color: #007BFF
-            }
+            
+           
+          }
          }
       
     }
@@ -1122,8 +1206,7 @@ body {
 
 .arrow {
     border: none;
-    color: white;
-    font-size: 16px;
+    color: $secondary-color;
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -1134,6 +1217,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    a {
+      padding:0;
+      margin:0;
+    
+      i {
+        color: $secondary-color;
+        
+        font-size: 16px;
+      }
+    }
 }
 .arrow:hover {
     cursor: pointer;
