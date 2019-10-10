@@ -637,6 +637,13 @@ li {
         margin: 0; }
     #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i:hover {
       color: #007BFF; }
+  @media (min-width: 751px) and (max-width: 900px) {
+    #section-6-testimonials .section-6-testimonials-subcontainer {
+      width: 80%;
+      margin: 0 30px 0; }
+      #section-6-testimonials .section-6-testimonials-subcontainer .section-6-testimonials-info {
+        width: 700;
+        padding: 0 30px 0; } }
   @media (max-width: 750px) {
     #section-6-testimonials .section-6-testimonials-info {
       flex-direction: column; }
@@ -649,13 +656,6 @@ li {
         #section-6-testimonials .section-6-testimonials-info .section-6-testimonials-info-text p {
           width: 60%;
           text-align: center; } }
-  @media (min-width: 751px) and (max-width: 900px) {
-    #section-6-testimonials .section-6-testimonials-subcontainer {
-      width: 80%;
-      margin: 0 30px 0; }
-      #section-6-testimonials .section-6-testimonials-subcontainer .section-6-testimonials-info {
-        width: 700;
-        padding: 0 30px 0; } }
 
 #section-7-team {
   background-color: #FFF;
@@ -678,7 +678,8 @@ li {
     padding-bottom: 60px;
     width: 50%; }
   #section-7-team .section-7-team-container-img {
-    display: flex; }
+    display: flex;
+    width: 100%; }
     #section-7-team .section-7-team-container-img .section-7-team-images {
       width: 255px;
       height: 255px;
@@ -740,13 +741,17 @@ li {
       transform: translateY(-25px); }
     #section-7-team .section-7-team-container-img .section-7-team-images-overlay .section-7-team-images-ovarlay-icons {
       transform: translateY(-25px); }
+  @media (max-width: 1200px) {
+    #section-7-team .section-7-team-images {
+      height: 150px;
+      width: 150px; } }
   @media (max-width: 900px) {
     #section-7-team .section-7-team-container-img {
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
       #section-7-team .section-7-team-container-img img {
-        width: 40%; } }
+        width: 50%; } }
   @media (max-width: 600px) {
     #section-7-team .section-7-team-container-img {
       display: flex;
@@ -1008,7 +1013,8 @@ li {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 200px; }
+        width: 200px;
+        padding-right: 10px; }
         #footer .footer-container .bloque2 .contact-us .icons .iconos {
           width: 35px;
           height: 35px;

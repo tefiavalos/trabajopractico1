@@ -875,6 +875,16 @@ body {
          }
       
     }
+    @media (min-width:751px) and (max-width:900px) {
+      .section-6-testimonials-subcontainer {
+        width:80%;
+        margin: 0 30px 0;
+        .section-6-testimonials-info {
+        width: 700;
+        padding: 0 30px 0;
+        }
+      }
+    }
     
     @media (max-width:750px){
       .section-6-testimonials-info {
@@ -894,16 +904,7 @@ body {
       }
 
     }
-    @media (min-width:751px) and (max-width:900px) {
-      .section-6-testimonials-subcontainer {
-        width:80%;
-        margin: 0 30px 0;
-        .section-6-testimonials-info {
-        width: 700;
-        padding: 0 30px 0;
-        }
-      }
-    }
+    
       
   }
   
@@ -931,6 +932,7 @@ body {
     }
     .section-7-team-container-img{
       display:flex;
+      width: 100%;
       .section-7-team-images{
         width: 255px;
         height: 255px;
@@ -1008,6 +1010,14 @@ body {
         }
       }
     }
+
+    @media (max-width:1200px) {
+      .section-7-team-images{
+        height: 150px;
+        width: 150px;
+      }
+    }
+
   @media(max-width:900px){
       .section-7-team-container-img{
         display:flex;
@@ -1392,6 +1402,7 @@ body {
         justify-content: space-around;
         align-items: center;
         width: 200px;
+        padding-right: 10px;
         .iconos {
           width: 35px;
           height: 35px;
