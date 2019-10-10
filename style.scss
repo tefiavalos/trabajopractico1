@@ -1171,7 +1171,7 @@ body {
     width: 50%;
     display:flex;
     .contact-us{
-      width: 40%;
+      width: 45%;
       font-size:14px;
       padding-left:15px;
       padding-right:15px;
@@ -1185,9 +1185,10 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
         .iconos {
-          width: 40px;
-          height: 40px;
+          width: 35px;
+          height: 35px;
           background-color: #007bff;
           border-radius: 50%;
           display: flex;
@@ -1202,7 +1203,7 @@ body {
       }
     }
     .newsletter{
-      width: 50%;
+      width: 55%;
       height: 250px;
       display: flex;
       flex-direction: column;
@@ -1256,78 +1257,92 @@ body {
 
 
 
-@media(max-width:900px){
-    #footer{
-      .footer-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
 
-        .bloque1{
-        display: flex;
-        margin-bottom: 20px;
-          .wayne {
-          padding: 0;
-          margin-right: 20px;
-          width:50%;
-          h2 {
-            margin-top: 0;
-            }
+}
+@media(max-width:960px){
+  #footer{
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+
+      .bloque1{
+      display: flex;
+      margin-bottom: 20px;
+      width: 100%;
+        .wayne {
+        padding: 0;
+        margin-right: 20px;
+        width:50%;
+        h2 {
+          margin-top: 0;
           }
-          .useful-links{
-          width: 50%;
-          padding-left:0;
-          }
-        
-      }
-    
-        .bloque2{
-          .newsletter{
-          width: 50%;
-          padding-left:0;
         }
+        .useful-links{
+        width: 50%;
+        padding-left:0;
+        }
+      
+    }
+  
+      .bloque2{
+        width: 100%;
+        .newsletter{
+        width: 50%;
+        padding-left:0;
+      }
 
-          .contact-us{
-          width: 50%;
-          padding-left:0;
-            .icons {
-            width: 100%;
-            }
+        .contact-us{
+        width: 50%;
+        padding-left:0;
           }
         }
       }
     }
   }
 
-@media(max-width:600px){
 
-    #footer, .footer-container, .bloque1, .bloque2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+@media(max-width:768px){
 
-    .wayne, .useful-links, .contact-us, .newsletter {
-        margin-bottom: 20px;
-    }
+  #footer{
 
-    .wayne {
-        width: 100%;
-        margin-left: 0;
+    .footer-container{
+      .bloque1{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .wayne{
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 20px;
+          padding:0;
+      }
+      .useful-links{
+      width: 100%;
+      margin-bottom: 20px;
+      padding:0;
+      }
     }
-
-    .newsletter {
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .icons {
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-    }
-}
-}
+      .bloque2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+        .newsletter {
+          margin-bottom: 20px;
+          padding: 0;
+          width: 100%;
+          form {
+            width: 100%;
+          }
+        }
+       }
+        .contact-us{
+          margin-bottom: 20px;
+          padding:0;
+          width: 100%;
+            }      
+          }
+        }
+      }
+    
