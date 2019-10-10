@@ -63,9 +63,12 @@ body {
           }
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 960px) {
         .menu-pc {
           display: none;
+        }
+        .hamburguer{
+          display:block;
         }
         nav {
           height: 60px;
@@ -932,6 +935,7 @@ body {
     }
     .section-7-team-container-img{
       display:flex;
+      justify-content: center;
       width: 100%;
       .section-7-team-images{
         width: 255px;
