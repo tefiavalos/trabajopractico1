@@ -63,9 +63,12 @@ body {
           }
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 960px) {
         .menu-pc {
           display: none;
+        }
+        .hamburguer{
+          display:block;
         }
         nav {
           height: 60px;
@@ -624,12 +627,13 @@ body {
     }
 
     @media (max-width:900px) {
+     
       .section-4-why-choose-us-container-box {
         flex-direction: column;
              
       .section-4-why-choose-us-box {
         margin-bottom: 20px;
-        width: 650px;
+        width: 95%;
       }        
       }
       .section-4-why-choose-us-countup {
@@ -945,6 +949,7 @@ body {
     }
     .section-7-team-container-img{
       display:flex;
+      justify-content: center;
       width: 100%;
       .section-7-team-images{
         width: 255px;

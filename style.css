@@ -44,9 +44,11 @@ nav {
       transition: 0.3s; }
     nav .menu-pc a:hover {
       color: #007BFF; }
-  @media (max-width: 900px) {
+  @media (max-width: 960px) {
     nav .menu-pc {
       display: none; }
+    nav .hamburguer {
+      display: block; }
     nav nav {
       height: 60px;
       padding: 10px 0; } }
@@ -461,7 +463,7 @@ li {
       flex-direction: column; }
       #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
         margin-bottom: 20px;
-        width: 650px; }
+        width: 95%; }
     #section-4-why-choose-us .section-4-why-choose-us-countup {
       display: flex;
       flex-wrap: wrap;
@@ -683,6 +685,7 @@ li {
     width: 50%; }
   #section-7-team .section-7-team-container-img {
     display: flex;
+    justify-content: center;
     width: 100%; }
     #section-7-team .section-7-team-container-img .section-7-team-images {
       width: 255px;
