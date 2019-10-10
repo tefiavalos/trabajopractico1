@@ -456,6 +456,10 @@ li {
       #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info p {
         font-size: 14px;
         color: #cce5ff; }
+  @media (max-width: 1000px) {
+    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
+      width: 250px;
+      margin: 0 10px; } }
   @media (max-width: 900px) {
     #section-4-why-choose-us .section-4-why-choose-us-container-box {
       flex-direction: column; }
@@ -469,7 +473,7 @@ li {
       #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
         padding: 20px; } }
   @media (max-width: 650px) {
-    #section-4-why-choose-us .section-4-why-choose-us-box {
+    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
       width: 400px; }
     #section-4-why-choose-us .section-4-why-choose-us-countup {
       flex-direction: column;
@@ -747,9 +751,12 @@ li {
     #section-7-team .section-7-team-container-img .section-7-team-images-overlay .section-7-team-images-ovarlay-icons {
       transform: translateY(-25px); }
   @media (max-width: 1200px) {
-    #section-7-team .section-7-team-images {
-      height: 150px;
-      width: 150px; } }
+    #section-7-team .section-7-team-container-img .section-7-team-images {
+      height: 200px;
+      width: 200px; }
+      #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay {
+        height: 200px;
+        width: 200px; } }
   @media (max-width: 900px) {
     #section-7-team .section-7-team-container-img {
       display: flex;
