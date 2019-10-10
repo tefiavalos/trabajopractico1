@@ -201,29 +201,43 @@ body {
  }
 
     @media (max-width:950px) {
-      #section-1-intro {
-        flex-direction: column;
-        justify-content: center;
-        padding: 100px 30px 60px; 
+        #section-1-intro {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 100px 30px 60px; 
           .section-1-intro-img {
-            width:65%;
-            
+            width:65%;            
           }
           .section-1-intro-title {
             width:90%;
-              h2 {
-              font-size:34px;
-            
-              }
-            }
-
-          .section-1-intro-button{
-            width: 80%;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             
+              h2 {
+              text-align: center;
+              font-size:34px;
+              margin: 30px;
+              }
+                .section-1-intro-button{
+                  width: 60%;
+                  align-items: center;
+                  }
             }
-        }    
-    }
+          }    
+      }
+      @media (max-width:600px) {
+        #section-1-intro {
+          padding: 100px 10px 60px;
+          .section-1-intro-img {
+            width:80%;            
+          }
+          .section-1-intro-title {
+            width:100%;
+          }
+        }
+      }
 
   #section-2-about{
     background-color: $secondary-color;
