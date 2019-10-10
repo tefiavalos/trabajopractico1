@@ -400,8 +400,7 @@ li {
     width: 50%; }
   #section-4-why-choose-us .section-4-why-choose-us-container-box {
     display: flex;
-    justify-content: space-around;
-    text-align: center; }
+    justify-content: space-around; }
     #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
       display: flex;
       flex-direction: column;
@@ -424,7 +423,8 @@ li {
       #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box p {
         color: #D8EAFE;
         font-family: "Open Sans", sans-serif;
-        font-size: 15px; }
+        font-size: 15px;
+        text-align: center; }
       #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box > a {
         text-decoration: none;
         color: #FFF;
@@ -441,16 +441,35 @@ li {
     justify-content: space-between;
     color: #FFF;
     width: 80%;
-    text-align: center;
     padding: 40px; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info h4 {
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      font-size: 48px;
-      margin: 0; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info p {
-      font-size: 14px;
-      color: #cce5ff; }
+    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
+      text-align: center; }
+      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info h4 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        margin: 0; }
+      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info p {
+        font-size: 14px;
+        color: #cce5ff; }
+  @media (max-width: 900px) {
+    #section-4-why-choose-us .section-4-why-choose-us-container-box {
+      flex-direction: column; }
+      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
+        margin-bottom: 20px;
+        width: 650px; }
+    #section-4-why-choose-us .section-4-why-choose-us-countup {
+      display: flex;
+      flex-wrap: wrap;
+      width: 65%; }
+      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
+        padding: 20px; } }
+  @media (max-width: 650px) {
+    #section-4-why-choose-us .section-4-why-choose-us-box {
+      width: 400px; }
+    #section-4-why-choose-us .section-4-why-choose-us-countup {
+      flex-direction: column;
+      align-items: center; } }
 
 #section-5-portfolio {
   background-color: #FFF;
@@ -727,7 +746,7 @@ li {
       flex-wrap: wrap;
       justify-content: center; }
       #section-7-team .section-7-team-container-img img {
-        width: 50%; } }
+        width: 40%; } }
   @media (max-width: 600px) {
     #section-7-team .section-7-team-container-img {
       display: flex;
