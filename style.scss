@@ -1335,7 +1335,6 @@ body {
       font-family: $title-font;
       font-size:13px;
       width: 70%;
-      height: 242px;
       padding-left: 45px;
       padding-right: 15px;
       line-height: 0.75cm;
@@ -1346,7 +1345,6 @@ body {
     }
     .useful-links{
       width: 30%;
-      height: 242px;
       font-size:14px;
       padding-left:15px;
       padding-right:15px;
@@ -1380,7 +1378,6 @@ body {
     display:flex;
     .contact-us{
       width: 45%;
-      height: 250px;
       font-size:14px;
       padding-left:15px;
       padding-right:15px;
@@ -1394,7 +1391,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
+        width: 200px;
         .iconos {
           width: 35px;
           height: 35px;
@@ -1413,13 +1410,15 @@ body {
     }
     .newsletter{
       width: 55%;
-      height: 242px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       font-size:14px;
       padding-left:15px;
       padding-right:15px;
+      h4{
+        margin:10px 0;
+      }
       p {
         margin: 0 0 40px;
       }
