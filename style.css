@@ -915,6 +915,7 @@ li {
       font-family: "Montserrat", sans-serif;
       font-size: 13px;
       width: 70%;
+      height: 242px;
       padding-left: 45px;
       padding-right: 15px;
       line-height: 0.75cm; }
@@ -923,6 +924,7 @@ li {
         font-weight: 400; }
     #footer .footer-container .bloque1 .useful-links {
       width: 30%;
+      height: 242px;
       font-size: 14px;
       padding-left: 15px;
       padding-right: 15px; }
@@ -944,6 +946,7 @@ li {
     display: flex; }
     #footer .footer-container .bloque2 .contact-us {
       width: 45%;
+      height: 242px;
       font-size: 14px;
       padding-left: 15px;
       padding-right: 15px; }
@@ -970,13 +973,15 @@ li {
           cursor: pointer; }
     #footer .footer-container .bloque2 .newsletter {
       width: 55%;
-      height: 250px;
+      height: 242px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       font-size: 14px;
       padding-left: 15px;
       padding-right: 15px; }
+      #footer .footer-container .bloque2 .newsletter h4 {
+        margin-top: 14px; }
       #footer .footer-container .bloque2 .newsletter p {
         margin: 0 0 40px; }
       #footer .footer-container .bloque2 .newsletter form {
