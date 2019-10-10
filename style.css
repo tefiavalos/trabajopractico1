@@ -197,7 +197,8 @@ li {
       color: #556877;
       font-family: "Open Sans", sans-serif;
       font-size: 15px;
-      line-height: 1.5px; }
+      width: 50%;
+      text-align: center; }
   #section-2-about .section-2-container-about-articles {
     display: flex;
     margin: 20px; }
@@ -280,7 +281,29 @@ li {
 
 @media (max-width: 950px) {
   #section-2-about {
-    padding: 60px 150px; } }
+    flex-direction: column; }
+    #section-2-about .section-2-container-about .section-2-container-about-articles {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      #section-2-about .section-2-container-about .section-2-container-about-articles .section-2-container-about-text {
+        flex-direction: column;
+        width: 100%;
+        order: 2; }
+        #section-2-about .section-2-container-about .section-2-container-about-articles .section-2-container-about-text .section-2-container-about-box {
+          width: 100%; }
+      #section-2-about .section-2-container-about .section-2-container-about-articles .section-2-container-img {
+        width: 100%;
+        order: 1; }
+    #section-2-about .section-2-container-about .section-2-container-about-articles-2 {
+      flex-direction: column;
+      width: 100%; }
+      #section-2-about .section-2-container-about .section-2-container-about-articles-2 .section-2-container-about-articles-2-img {
+        order: 1;
+        width: 100%; }
+      #section-2-about .section-2-container-about .section-2-container-about-articles-2 .section-2-container-about-articles-2-text {
+        width: 100%;
+        order: 2; } }
 
 #section-3-services {
   background-color: #ECF5FF;
