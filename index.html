@@ -30,15 +30,17 @@
     </nav>
 
     <div id="menu">
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Team</li>
-            <li>Drop Down</li>
-            <li>Contact Us</li>
-        </ul>
+        <div class="mobile-menu">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Team</li>
+                <li>Drop Down</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
         <div class="close"><a href="#"><i class="fas fa-times"></i></a></div>
     </div>
 
@@ -48,7 +50,8 @@
             <h2>We provide <span>solutions</span> for your business!</h2>
             <div class="section-1-intro-button">
                 <button class="section-1-button-1">Get Started</button>
-                <button class="section-1-button-2">Our Services</button></div>
+                <button class="section-1-button-2">Our Services</button>
+            </div>
         </div>
     </section>
 
@@ -409,11 +412,26 @@
             </div>
 
             <div class="section-6-testimonials-info-button">
-                <button><a href="#testimonial-1"></a></button>
-                <button><a href="#testimonial-2"></a></button>
-                <button><a href="#testimonial-3"></a></button>
-                <button><a href="#testimonial-4"></a></button>
-                <button><a href="#testimonial-5"></a></button>
+                <label>
+                    <i class="fas fa-circle"><a href="#testimonial-1"></a></i>
+                    <input type="radio" id="testim-1" name="testimonials" value="testimonial">
+                </label>
+                <label>
+                    <i class="fas fa-circle"><a href="#testimonial-2"></a></i>
+                    <input type="radio" id="testim-2" name="testimonials" value="testimonial">
+                </label>
+                <label>                    
+                    <i class="fas fa-circle"><a href="#testimonial-3"></a></i>
+                    <input type="radio" id="testim-3" name="testimonials" value="testimonial">
+                </label>
+                <label>                    
+                    <i class="fas fa-circle"><a href="#testimonial-4"></a></i>
+                    <input type="radio" id="testim-4" name="testimonials" value="testimonial">
+                </label>
+                <label>                    
+                    <i class="fas fa-circle"> <a href="#testimonial-5"></a> </i>
+                    <input type="radio" id="testim-5" name="testimonials"  value="testimonial"checked>
+                </label>
             </div>
 
         </div>
@@ -585,7 +603,7 @@
     </section>
 
     <button class="arrow">
-        <i class="fas fa-chevron-up"></i>
+        <a href="#section-1-intro"><i class="fas fa-chevron-up"></i></a>
     </button>
     <footer id="footer">
         <div class="footer-container">
