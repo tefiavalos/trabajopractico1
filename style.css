@@ -736,7 +736,6 @@ li {
     margin: 10px 10px 30px 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     box-sizing: border-box; }
     #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards {
@@ -753,11 +752,21 @@ li {
       overflow: hidden; }
       #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img {
         transition: all 0.4s ease-in-out;
-        max-width: 100%;
+        width: 100%;
         height: auto;
         box-sizing: border-box; }
       #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards img:hover {
         transform: scale(1.25); }
+
+@media (max-width: 960px) {
+  #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards {
+    width: 33%; } }
+
+@media (max-width: 760px) {
+  #section-8-our-clients .section-8-our-clients-container-box {
+    flex-direction: column; }
+    #section-8-our-clients .section-8-our-clients-container-box .section-8-our-clients-cards {
+      width: 100%; } }
 
 #section-9-contact-us {
   background-color: #FFF;
