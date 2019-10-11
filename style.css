@@ -64,7 +64,11 @@ html {
           display: none; }
         html body nav nav {
           height: 60px;
-          padding: 10px 0; } }
+          padding: 10px 0; }
+        html body nav .menu-pc {
+          display: none; }
+        html body nav .hamburguer {
+          display: block; } }
   html #menu {
     background-color: rgba(17, 19, 20, 0.8);
     color: #FFF;
