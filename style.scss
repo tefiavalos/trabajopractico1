@@ -90,7 +90,6 @@ body {
       
       }
 
-<<<<<<< HEAD
       @media (max-width: 960px) {
         nav {
           height: 60px;
@@ -103,16 +102,6 @@ body {
           display:block;
         }
         
-=======
-      @media (max-width: 900px) {
-        .menu-pc {
-          display: none;
-        }
-        nav {
-          height: 60px;
-          padding: 10px 0;
-        }
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
       }
      
     
@@ -1621,15 +1610,15 @@ body {
             width: 100%;
           }
         }
-       }
         .contact-us{
           margin-bottom: 20px;
           padding:0;
           width: 100%;
-            }      
-          }
-        }
+        }      
       }
+    }
+  }        
+}
     
     }
   }
