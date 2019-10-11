@@ -43,20 +43,26 @@ nav {
       text-decoration: none;
       padding: 10px 15px;
       transition: 0.3s; }
-    nav .menu-pc .dropdown {
-      margin: 0;
-      background-color: #FFF;
-      width: 100px;
-      height: auto;
-      display: none;
-      position: absolute;
-      top: 50px;
-      padding: 10px 0;
-      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-      transition: ease all 0.3s; }
-      nav .menu-pc .dropdown ul, nav .menu-pc .dropdown li {
+      nav .menu-pc a i {
+        padding-left: 10px; }
+      nav .menu-pc a .dropdown {
         margin: 0;
-        padding: 0; }
+        background-color: #FFF;
+        width: 180px;
+        height: auto;
+        display: none;
+        position: absolute;
+        top: 50px;
+        padding: 10px 0;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: ease all 0.5s; }
+        nav .menu-pc a .dropdown ul li {
+          margin: 0;
+          padding: 10px 20px;
+          font-size: 13px;
+          color: #004289; }
+          nav .menu-pc a .dropdown ul li i {
+            padding-left: 10px; }
     nav .menu-pc a:hover {
       color: #007BFF; }
     nav .menu-pc .dr:hover .dropdown {
