@@ -20,6 +20,7 @@ body {
   nav {
     background-color: $secondary-color;
     padding: 20px 60px;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -77,19 +78,17 @@ body {
   }
 
   #menu {
-    background-color: rgba(19, 39, 57, 0.8);
+    background-color: rgba(17, 19, 20, 0.8);
     color: $secondary-color;
     width: 350px;
-    display: flex;
+    height: 100%;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -350px;
-    height: 100%;
     transition: all 0.5s;
     z-index: 4;
     }
-  
 
   a{
     font-weight: 600;
@@ -106,6 +105,10 @@ body {
       list-style:none;
       padding-bottom:10px;
       font-weight: 600;
+      a{
+        text-decoration: none;
+        color: $secondary-color;
+      }
   }
 
   #menu:target {
