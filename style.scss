@@ -63,12 +63,9 @@ body {
           }
       }
 
-      @media (max-width: 960px) {
+      @media (max-width: 900px) {
         .menu-pc {
           display: none;
-        }
-        .hamburguer{
-          display:block;
         }
         nav {
           height: 60px;
@@ -627,13 +624,12 @@ body {
     }
 
     @media (max-width:900px) {
-     
       .section-4-why-choose-us-container-box {
         flex-direction: column;
              
       .section-4-why-choose-us-box {
         margin-bottom: 20px;
-        width: 95%;
+        width: 650px;
       }        
       }
       .section-4-why-choose-us-countup {
@@ -807,7 +803,6 @@ body {
 
     .section-6-testimonials-container {
       margin: 0px 120px;
-      width: 800px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -821,11 +816,13 @@ body {
         flex-direction: column;
         .section-6-testimonials-info {
           display: flex;
-          width: 750px;
+          
           .section-6-testimonials-info-img {
             margin-right: 20px;
-            text-align: center;
-            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
             img {
               height: 120px;
               width: 120px;
@@ -894,10 +891,9 @@ body {
     }
     @media (min-width:751px) and (max-width:900px) {
       .section-6-testimonials-subcontainer {
-        width:80%;
         margin: 0 30px 0;
         .section-6-testimonials-info {
-        width: 700;
+        width: 700px;
         padding: 0 30px 0;
         }
       }
@@ -914,7 +910,7 @@ body {
           align-items: center;
           padding: 20px 0;
           p {
-            width: 60%;
+            
             text-align: center;
           }
         }
