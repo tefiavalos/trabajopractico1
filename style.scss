@@ -4,6 +4,65 @@ $main-color: #1445b3;
 $secondary-color: #FFF;
 $title-font: "Montserrat", sans-serif;
 $text-font: 'Open Sans', sans-serif;
+$title-color: #283D50;
+$text-color: #556877;
+$main-button-color: #007BFF;
+
+@mixin flex-column-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin h3-section {
+  color: $title-color;
+  font-family: $title-font;
+  font-size: 36px; 
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@mixin p-section {
+  color:$text-color;
+  font-family: $text-font;
+  font-size: 15px;
+  width:50%;
+  text-align:center; 
+  padding-bottom: 60px;
+}
+
+@mixin buttons-section-1 {
+  color:$secondary-color;
+  border-radius: 50px;
+  font-family: $title-font;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+@mixin color-button-1-and-hover-button-2-section-1 {
+  background: $main-button-color;
+  border: 2px solid $main-button-color;
+}
+@mixin color-button-2-and-hover-button-1-section-1 {
+  background: $main-color;
+  border: 2px solid $secondary-color;
+}
+
+@mixin subsection-text-p {
+  font-family: $text-font;
+  color: #444;
+  margin: 0 0 30px;  
+}
+
+@mixin flex-center-center {
+  display:flex;
+  justify-content:center;
+  align-items:center;  
+}
 
 *{
   box-sizing:border-box;
@@ -79,7 +138,7 @@ body {
               }  
         
           a:hover {
-            color: #007BFF;
+            color: $main-button-color;
           }
           .dr:hover{
             .dropdown{
@@ -167,10 +226,8 @@ body {
   }
 
   #section-1-intro{
-    display:flex;
+    @include flex-center-center;
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
     padding: 150px 60px 60px;
     .section-1-intro-img{
       width: 50%;
@@ -196,39 +253,19 @@ body {
         width: 60%;
         justify-content: space-between;
         .section-1-button-1{
-          background: #007bff;
-          border: 2px solid #007bff;
-          color:$secondary-color;
-          border-radius: 50px;
-          font-family: $title-font;
-          font-weight: 600;
-          font-size: 14px;
-          padding: 10px 20px;
-          letter-spacing: 1px;
-          transition: 0.5s;
+          @include color-button-1-and-hover-button-2-section-1;
+          @include buttons-section-1;
         }
         .section-1-button-2{
-          background: $main-color;
-          border: 2px solid $secondary-color;
-          color:$secondary-color;
-          border-radius: 50px;
-          font-family: $title-font;
-          font-weight: 600;
-          font-size: 14px;
-          padding: 10px 20px;
-          letter-spacing: 1px;
-          transition: 0.5s;
+          @include color-button-2-and-hover-button-1-section-1;
+          @include buttons-section-1;
         }
       }
       .section-1-button-1:hover{
-        background: $main-color;
-        border: 2px solid $secondary-color;
-        
+        @include color-button-2-and-hover-button-1-section-1        
       }
-
       .section-1-button-2:hover{
-        background: #007bff;
-        border: 2px solid #007bff;
+        @include color-button-1-and-hover-button-2-section-1;
       }
     }  
  }
@@ -276,24 +313,13 @@ body {
     background-color: $secondary-color;
     padding: 60px 60px;
     main{
-      display:flex;
-      flex-direction: column;
-      justify-content:center;
-      align-items:center;
+      @include flex-column-center-center;
 
       h3{
-        color:#283d50;
-        font-family: $title-font;
-        font-size: 36px; 
-        margin-bottom: 20px;
-        font-weight: 500;
+        @include h3-section;
       }
       p{
-        color:#556877;
-        font-family: $text-font;
-        font-size: 15px;
-        width:50%;
-        text-align:center;        
+        @include p-section;        
       }
       
     }
@@ -307,12 +333,10 @@ body {
         flex-direction: column;
         padding: 0 15px;
           p{
-          color: #444;
-          font-family: $text-font;
           font-size: 16px;
           font-weight: 400;
           line-height: 26px;
-          margin-bottom: 30px;
+          @include subsection-text-p; 
           
           }
           .section-2-container-about-box {
@@ -320,18 +344,16 @@ body {
             padding: 0 0 30px;
             
             .about-icons{
-              display:flex;
-              justify-content: center;
-              align-items: center;
+              @include flex-center-center;
               width: 64px;
               height: 64px;
               padding: 20px;
               border-radius: 50%;
-              border: 2px solid #007bff;
+              border: 2px solid $main-button-color;
               transition: all 0.3s ease-in-out;
               background-color: $secondary-color;
               i {
-                color: #007bff;
+                color: $main-button-color;
                 font-size: 28px
               }
             }
@@ -340,18 +362,15 @@ body {
               margin-left: 15px;
                 h4{
                 margin: 0 0 5px;
-                color: #283D50;
+                color: $title-color;
                 font-family: $title-font;
                 font-weight: 600;
                 font-size: 18px;
                 }
 
                 p {
-                  color: #444;
-                  font-family: $text-font;
-                  font-size: 14px;
-                  margin-bottom: 30px;
-
+                  @include subsection-text-p; 
+                  font-size: 14px;                  
                 }
             }
           }
@@ -359,7 +378,7 @@ body {
         }
         .section-2-container-about-box:hover .about-icons {
           
-          background-color: #007BFF;
+          background-color: $main-button-color;
           i {
             color: $secondary-color;
           }
@@ -394,15 +413,13 @@ body {
         h4 {
           font-family: $title-font;
           font-size: 24px;
-          font-weight: 600px;
+          font-weight: 600;
           color: #444;
           margin: 0 0 20px;
         }
         p {
-          font-family: $text-font;
+          @include subsection-text-p; 
           font-size: 16px;
-          color: #444;
-          margin: 0 0 30px;
           line-height: 1.5;
         }
       }
@@ -443,6 +460,7 @@ body {
               .section-2-container-about-articles-2-text{
                 width:100%;
                 order:2;
+                padding: 24px 15px 0;
               }
           }
         }
@@ -454,29 +472,18 @@ body {
     background-color: #ECF5FF;
     padding: 60px 60px;
     header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      @include flex-column-center-center;
+
       h3 {
-        font-family: $title-font;
-        font-size: 36px;
-        color: #283d50;
-        text-align: center;
-        font-weight: 500;
+        @include h3-section;
       }
       p {
-        text-align: center;
-        color: #556877;
-        padding-bottom: 60px;
-        width: 50%;
+        @include p-section;
       }
     }
     .section-3-services-container-cards {
-      display: flex;
+      @include flex-center-center;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       margin: 0 auto;
       .section-3-services-cards {
@@ -530,8 +537,7 @@ body {
             color: #111;
             }
           p {
-            font-family: $text-font;
-            color: #444;
+            @include subsection-text-p;
             font-size: 14px;
           }
         }  
@@ -544,26 +550,18 @@ body {
 
   #section-4-why-choose-us {
     background-color: #004A99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 60px;
+    @include flex-column-center-center;
 
     h3{
-      color:$secondary-color;
-      font-family: $title-font;
-      font-size: 36px; 
-      margin-bottom: 20px;
+      @include h3-section;
+      color:$secondary-color; 
     }
 
     >p{
+      @include p-section;
       color:$secondary-color;
-      font-family: $text-font;
-      font-size: 15px;
-      padding-bottom: 60px; 
-      text-align: center;
-      width: 50%;
+          
     }
 
     .section-4-why-choose-us-container-box {
@@ -662,7 +660,7 @@ body {
              
       .section-4-why-choose-us-box {
         margin-bottom: 20px;
-        width: 650px;
+        width: 600px;
       }        
       }
       .section-4-why-choose-us-countup {
@@ -675,11 +673,11 @@ body {
         
       }
     }
-
+    
     @media (max-width:650px) {
       .section-4-why-choose-us-container-box{
       .section-4-why-choose-us-box {
-        width:400px;
+        width:350px;
       }
     }
       .section-4-why-choose-us-countup {
@@ -687,6 +685,14 @@ body {
         align-items: center;
       }
 
+    }
+
+    @media (max-width:470px) {
+      .section-4-why-choose-us-container-box{
+        .section-4-why-choose-us-box {
+          width:200px;
+        }
+      }
     }
 
   }
@@ -701,15 +707,10 @@ body {
     align-items: center;
     padding: 60px 60px;
     .section-5-portfolio-title-and-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      @include flex-column-center-center;
+
       h3{
-        font-family:$title-font;
-        font-size: 36px;
-        font-weight: 500;
-        color: #283d50; /* TAL VEZ DECLARARLO PARA EL H3*/
+        @include h3-section;
       }
       .section-5-portfolio-button {
         display: flex;
@@ -718,7 +719,7 @@ body {
         button {
           background-color: #ECF5FF;
           border-radius: 50px;
-          color: #007BFF;
+          color: $main-button-color;
           padding: 6px 20px;
           margin: 10px;
           border: none;
@@ -726,7 +727,7 @@ body {
           font-size: 12px;
         }
         button:hover, .section-5-portfolio-button-all {
-            background-color: #007BFF;
+            background-color: $main-button-color;
             color: $secondary-color;
         }
       }
@@ -746,9 +747,7 @@ body {
         overflow: hidden;
         margin-bottom: 30px;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center;
         img {
           width: 100%;
           height: 100%;
@@ -762,10 +761,6 @@ body {
           position: relative;
           width: 350px;
           height: 250px; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
           display: none;
 
           .section-5-portfolio-img-overlay-info {
@@ -789,72 +784,54 @@ body {
           
             .fas.fa-eye, .fas.fa-external-link-alt {
               color: #E2EFFE;
-              background-color: #007BFF;
+              background-color: $main-button-color;
               border-radius: 50%;
               height: 36px;
               width:36px;
               text-align: center;
               padding: 10px 5px;
+              cursor: pointer;
+            }
+            .fas.fa-eye:hover, .fas.fa-external-link-alt:hover {
+              background-color: #0B6BD3;
             }
           }
-          
-
         }
-
-        
-
       }
       .section-5-portfolio-img:hover .section-5-portfolio-img-overlay {
         z-index: 2;
-        display: block;
-        
+        display: block;  
       }
     }
-
   }
 
   #section-6-testimonials {
     padding: 60px 60px;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #ECF5FF;
+    @include flex-column-center-center;
 
     .section-6-testimonials-title {
       margin: 0px 120px;
       font-family: $title-font;
        h3 {
-         margin: 0;
-         padding: 20px 0;
-         font-weight: 400;
-        font-size: 36px;
-        color: #283D50;
+        @include h3-section;   
       }
     }
 
     .section-6-testimonials-container {
       margin: 0px 120px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      @include flex-column-center-center;
 
       .section-6-testimonials-subcontainer {
         padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex-column-center-center;
         .section-6-testimonials-info {
           display: flex;
           
           .section-6-testimonials-info-img {
             margin-right: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center-center;
             
             img {
               height: 120px;
@@ -881,9 +858,8 @@ body {
             }
 
             p {
-              color: #444;
+              @include subsection-text-p;
               font-size: 16px;
-              font-family: $text-font;
               margin-top: 15px;
               font-style: italic;
             }
@@ -913,7 +889,7 @@ body {
               }
       
               i:hover{
-              color: #007BFF;
+              color: $main-button-color;
             
             }
             
@@ -937,44 +913,26 @@ body {
         flex-direction: column;
         
         .section-6-testimonials-info-text {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          @include flex-column-center-center;
           padding: 20px 0;
-          p {
-            
+          p {            
             text-align: center;
           }
         }
       }
-
-    }
-    
-      
+    }      
   }
   
   #section-7-team{
     background-color:$secondary-color;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+    @include flex-column-center-center;
     padding: 60px 60px;
     h3{
-      color:#283d50;
-      font-family:$title-font;
-      font-size: 36px;
-      font-weight: 500;
-      margin-bottom: 20px;
+      @include h3-section;
     }
     p{
-      font-family:$text-font;
-      font-weight: 400;
-      font-size: 15px;
-      text-align: center;
-      color: #556877;
-      padding-bottom: 60px;
-      width: 50%;
+      @include p-section;
+       
     }
     .section-7-team-container-img{
       display:flex;
@@ -1001,17 +959,12 @@ body {
           position: relative;
           width: 255px;
           height: 255px; 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
+          @include flex-column-center-center;
           opacity: 0;
           border-radius: 50%;
           transition: 0.5s ease;
           .section-7-team-images-overlay-info{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @include flex-column-center-center;
             transition: 2s ease;
             margin-top: 50px;
             h3{
@@ -1084,9 +1037,7 @@ body {
 
     @media(max-width:600px){
       .section-7-team-container-img{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+        @include flex-column-center-center;
       }
     }
   }
@@ -1095,26 +1046,15 @@ body {
   
   #section-8-our-clients {
     background-color: #ECF5FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column-center-center;
     padding: 60px 60px;
       
     h3{
-      color:#283d50;
-      font-family: $title-font;
-      font-size: 36px; 
-      margin-bottom: 20px;
-      font-weight: 400;
+      @include h3-section;
     }
 
     p{
-      padding-bottom: 60px;
-      color: #556877;
-      width: 50%;
-      font-size: 15px;
-      text-align: center;
+      @include p-section;
     }
       .section-8-our-clients-container-box{
       border-top: 1px solid #d6eaff;
@@ -1133,24 +1073,20 @@ body {
         border-right: 1px solid #d6eaff;
         border-bottom: 1px solid #d6eaff;
         box-sizing: border-box;
-        display:flex;
-        justify-content:center;
-        align-items:center;
+        @include flex-center-center;
         overflow:hidden;
 
           img{
               transition: all 0.4s ease-in-out;
               width: 100%;
               height: auto;
-              box-sizing: border-box;
-              
+              box-sizing: border-box;             
           }
 
           img:hover{
             transform: scale(1.25);
           }
         }
-      
       
       }
   }
@@ -1183,15 +1119,9 @@ body {
     overflow: hidden;
     padding: 60px 0;
     header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center-center;
       h3 {
-        font-family: $title-font;
-        font-size: 36px;
-        color: #283d50;
-        text-align: center;
-        font-weight: 500;
+        @include h3-section;
       }
     }
     .section-9-contact-us__main {
@@ -1213,7 +1143,7 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          color: #283d50;
+          color: $title-color;
           padding: 5px;
           .section-9-contact-us__address, 
           .section-9-contact-us__email, 
@@ -1223,7 +1153,7 @@ body {
           }
           i {
             font-size: 32px;
-            color: #007bff;
+            color: $main-button-color;
           }
           p {
             font-size: 14px;
@@ -1271,7 +1201,7 @@ body {
           .section-9-contact-us__form--button {
             text-align: center;
             button[type="submit"] {
-              background: #007bff;
+              background: $main-button-color;
               font-family: $title-font;
               border: 0;
               border-radius: 20px;
@@ -1353,9 +1283,7 @@ body {
         }
       }
     }
-  }
-
-  
+  }  
 
 .arrow {
     border: none;
@@ -1363,20 +1291,17 @@ body {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: #007bff;
+    background-color: $main-button-color;
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-center;
     a {
       padding:0;
       margin:0;
     
       i {
-        color: $secondary-color;
-        
+        color: $secondary-color;        
         font-size: 16px;
       }
     }
@@ -1459,11 +1384,9 @@ body {
         .iconos {
           width: 35px;
           height: 35px;
-          background-color: #007bff;
+          background-color: $main-button-color;
           border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex-center-center;
           transition: all 0.3s;
         }
         .iconos:hover {
@@ -1498,7 +1421,7 @@ body {
           border: none;
         }
           .submit{
-            background-color: #007bff;
+            background-color: $main-button-color;
             color: #ffffff;
             width: 30%;
             transition: all 0.3s;
@@ -1506,8 +1429,7 @@ body {
           .submit:hover {
             cursor: pointer;
             background-color: #0564CA;
-          }
-        
+          }        
       }
     }
   }
@@ -1516,30 +1438,21 @@ body {
 .copyright{
   height:100px;
   background-color:#00428a;
-  color: #ffffff;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  color: $secondary-color;
+  @include flex-column-center-center;
   p{
     margin:5px;
   }  
 }
 
-
-
-
 }
 @media(max-width:960px){
   #footer{
     .footer-container {
-      display: flex;
       flex-direction: column;
       justify-content: center;
   
-
-      .bloque1{
-      display: flex;
+      .bloque1{      
       margin-bottom: 20px;
       width: 100%;
         .wayne {
@@ -1556,8 +1469,7 @@ body {
         h4{
           margin:0;
         }
-        }
-      
+        }      
     }
   
       .bloque2{
@@ -1565,7 +1477,7 @@ body {
         .newsletter{
         width: 50%;
         padding-left:0;
-      }
+        }
 
         .contact-us{
         width: 50%;
@@ -1583,7 +1495,6 @@ body {
 
     .footer-container{
       .bloque1{
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       .wayne{
@@ -1599,7 +1510,6 @@ body {
       }
     }
       .bloque2{
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
         .newsletter {
