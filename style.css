@@ -4,7 +4,6 @@
 
 html {
   scroll-behavior: smooth; }
-<<<<<<< HEAD
   html body {
     margin: 0;
     background-color: #1445b3;
@@ -14,125 +13,6 @@ html {
       padding: 20px 60px;
       width: 100%;
       height: 80px;
-=======
-
-body {
-  margin: 0;
-  background-color: #1445b3;
-  font-family: 'Montserrat', sans-serif; }
-
-nav {
-  background-color: #FFF;
-  padding: 20px 60px;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3; }
-  nav .img-tp img {
-    margin: 7px 0px;
-    max-height: 26px; }
-  nav .img-tp .img-logo {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer; }
-  nav .menu-pc {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    transition: 0.5s; }
-    nav .menu-pc a {
-      color: #004289;
-      font-family: "Montserrat", sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: none;
-      padding: 10px 15px;
-      transition: 0.3s; }
-    nav .menu-pc a:hover {
-      color: #007BFF; }
-  @media (max-width: 900px) {
-    nav .menu-pc {
-      display: none; }
-    nav nav {
-      height: 60px;
-      padding: 10px 0; } }
-
-#menu {
-  background-color: rgba(17, 19, 20, 0.8);
-  color: #FFF;
-  width: 350px;
-  height: 100%;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: -350px;
-  transition: all 0.5s;
-  z-index: 4; }
-
-a {
-  font-weight: 600;
-  color: #1445b3;
-  font-size: 15px; }
-
-ul {
-  padding-left: 20px; }
-
-li {
-  list-style: none;
-  padding-bottom: 10px;
-  font-weight: 600; }
-  li a {
-    text-decoration: none;
-    color: #FFF; }
-
-#menu:target {
-  left: 0px; }
-
-.fas.fa-times {
-  position: absolute;
-  top: 20px;
-  left: 300px;
-  display: none;
-  color: #FFF; }
-
-#menu:target .fas.fa-times {
-  display: block; }
-
-> a {
-  padding-left: 10px; }
-
-.hamburguer {
-  display: none; }
-
-#section-1-intro {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 150px 60px 60px; }
-  #section-1-intro .section-1-intro-img {
-    width: 50%; }
-    #section-1-intro .section-1-intro-img .imagen-intro {
-      width: 100%; }
-  #section-1-intro .section-1-intro-title {
-    width: 50%; }
-    #section-1-intro .section-1-intro-title h2 {
-      font-family: "Montserrat", sans-serif;
-      color: #FFF;
-      font-size: 48px;
-      font-weight: 700; }
-      #section-1-intro .section-1-intro-title h2 span {
-        color: #74b5fc;
-        font-family: "Montserrat", sans-serif;
-        text-decoration: underline; }
-    #section-1-intro .section-1-intro-title .section-1-intro-button {
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
       display: flex;
       justify-content: space-between;
       box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -183,10 +63,10 @@ li {
         html body nav nav {
           height: 60px;
           padding: 10px 0; }
-          html body nav nav .menu-pc {
-            display: none; }
-          html body nav nav .hamburguer {
-            display: block; } }
+        html body nav .menu-pc {
+          display: none; }
+        html body nav .hamburguer {
+          display: block; } }
     html body #menu {
       background-color: rgba(17, 19, 20, 0.8);
       color: #FFF;
@@ -517,120 +397,11 @@ li {
       html body #section-4-why-choose-us > p {
         color: #FFF;
         font-family: "Open Sans", sans-serif;
-<<<<<<< HEAD
         font-size: 15px;
         padding-bottom: 60px;
         text-align: center;
         width: 50%; }
       html body #section-4-why-choose-us .section-4-why-choose-us-container-box {
-=======
-        font-weight: 600;
-        font-size: 16px;
-        transition: 0.3s ease-in-out; }
-      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box a:hover {
-        border-bottom: #fff solid 2px; }
-    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box:hover {
-      background: #003b7a; }
-  #section-4-why-choose-us .section-4-why-choose-us-countup {
-    display: flex;
-    justify-content: space-between;
-    color: #FFF;
-    width: 80%;
-    padding: 40px; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
-      text-align: center; }
-      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info h4 {
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        font-size: 48px;
-        margin: 0; }
-      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info p {
-        font-size: 14px;
-        color: #cce5ff; }
-  @media (max-width: 1000px) {
-    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-      width: 250px;
-      margin: 0 10px; } }
-  @media (max-width: 900px) {
-    #section-4-why-choose-us .section-4-why-choose-us-container-box {
-      flex-direction: column; }
-      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-        margin-bottom: 20px;
-        width: 650px; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup {
-      display: flex;
-      flex-wrap: wrap;
-      width: 65%; }
-      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
-        padding: 20px; } }
-  @media (max-width: 650px) {
-    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-      width: 400px; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup {
-      flex-direction: column;
-      align-items: center; } }
-
-#section-5-portfolio {
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 60px; }
-  #section-5-portfolio .section-5-portfolio-title-and-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; }
-    #section-5-portfolio .section-5-portfolio-title-and-button h3 {
-      font-family: "Montserrat", sans-serif;
-      font-size: 36px;
-      font-weight: 500;
-      color: #283d50;
-      /* TAL VEZ DECLARARLO PARA EL H3*/ }
-    #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px; }
-      #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button button {
-        background-color: #ECF5FF;
-        border-radius: 50px;
-        color: #007BFF;
-        padding: 6px 20px;
-        margin: 10px;
-        border: none;
-        font-family: "Open Sans", sans-serif;
-        font-size: 12px; }
-      #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button button:hover, #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button .section-5-portfolio-button-all {
-        background-color: #007BFF;
-        color: #FFF; }
-  #section-5-portfolio .section-5-portfolio-container-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 60px; }
-    #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img {
-      width: 350px;
-      height: 250px;
-      border-radius: 6px;
-      overflow: hidden;
-      margin-bottom: 30px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute; }
-      #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay {
-        background-color: rgba(0, 22, 99, 0.5);
-        color: #FFF;
-        position: relative;
-        width: 350px;
-        height: 250px;
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
         display: flex;
         justify-content: space-around; }
         html body #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
@@ -655,7 +426,6 @@ li {
           html body #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box p {
             color: #D8EAFE;
             font-family: "Open Sans", sans-serif;
-<<<<<<< HEAD
             font-size: 15px;
             text-align: center; }
           html body #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box > a {
@@ -694,7 +464,7 @@ li {
           flex-direction: column; }
           html body #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
             margin-bottom: 20px;
-            width: 95%; }
+            width: 650px; }
         html body #section-4-why-choose-us .section-4-why-choose-us-countup {
           display: flex;
           flex-wrap: wrap;
@@ -709,51 +479,9 @@ li {
           align-items: center; } }
     html body #section-5-portfolio {
       background-color: #FFF;
-=======
-            color: #E2EFFE;
-            font-size: 14px; }
-          #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info .fas.fa-eye, #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img .section-5-portfolio-img-overlay .section-5-portfolio-img-overlay-info .fas.fa-external-link-alt {
-            color: #E2EFFE;
-            background-color: #007BFF;
-            border-radius: 50%;
-            height: 36px;
-            width: 36px;
-            text-align: center;
-            padding: 10px 5px; }
-    #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img:hover .section-5-portfolio-img-overlay {
-      z-index: 2;
-      display: block; }
-
-#section-6-testimonials {
-  padding: 60px 60px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ECF5FF; }
-  #section-6-testimonials .section-6-testimonials-title {
-    margin: 0px 120px;
-    font-family: "Montserrat", sans-serif; }
-    #section-6-testimonials .section-6-testimonials-title h3 {
-      margin: 0;
-      padding: 20px 0;
-      font-weight: 400;
-      font-size: 36px;
-      color: #283D50; }
-  #section-6-testimonials .section-6-testimonials-container {
-    margin: 0px 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer {
-      padding: 15px;
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
       display: flex;
       flex-direction: column;
       align-items: center;
-<<<<<<< HEAD
       padding: 60px 60px; }
       html body #section-5-portfolio .section-5-portfolio-title-and-button {
         display: flex;
@@ -761,23 +489,6 @@ li {
         justify-content: center;
         flex-direction: column; }
         html body #section-5-portfolio .section-5-portfolio-title-and-button h3 {
-=======
-      flex-direction: column; }
-      #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info {
-        display: flex; }
-        #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info .section-6-testimonials-info-img {
-          margin-right: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info .section-6-testimonials-info-img img {
-            height: 120px;
-            width: 120px;
-            border-radius: 50%;
-            border: 4px solid #FFF; }
-        #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info .section-6-testimonials-info-text {
-          padding-bottom: 5px;
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
           font-family: "Montserrat", sans-serif;
           font-size: 36px;
           font-weight: 500;
@@ -795,46 +506,15 @@ li {
             margin: 10px;
             border: none;
             font-family: "Open Sans", sans-serif;
-<<<<<<< HEAD
             font-size: 12px; }
           html body #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button button:hover, html body #section-5-portfolio .section-5-portfolio-title-and-button .section-5-portfolio-button .section-5-portfolio-button-all {
             background-color: #007BFF;
             color: #FFF; }
       html body #section-5-portfolio .section-5-portfolio-container-img {
-=======
-            margin-top: 15px;
-            font-style: italic; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label input[type="radio"] {
-      display: none; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i {
-      width: 12px;
-      height: 12px;
-      color: #DDD;
-      margin: 0 5px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer; }
-      #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i a {
-        padding: 0;
-        margin: 0; }
-    #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-info-button label i:hover {
-      color: #007BFF; }
-  @media (min-width: 751px) and (max-width: 900px) {
-    #section-6-testimonials .section-6-testimonials-subcontainer {
-      margin: 0 30px 0; }
-      #section-6-testimonials .section-6-testimonials-subcontainer .section-6-testimonials-info {
-        width: 700px;
-        padding: 0 30px 0; } }
-  @media (max-width: 750px) {
-    #section-6-testimonials .section-6-testimonials-info {
-      flex-direction: column; }
-      #section-6-testimonials .section-6-testimonials-info .section-6-testimonials-info-text {
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-<<<<<<< HEAD
         padding: 0 60px; }
         html body #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img {
           width: 350px;
@@ -906,57 +586,6 @@ li {
           color: #283D50; }
       html body #section-6-testimonials .section-6-testimonials-container {
         margin: 0px 120px;
-        width: 800px;
-=======
-        padding: 20px 0; }
-        #section-6-testimonials .section-6-testimonials-info .section-6-testimonials-info-text p {
-          text-align: center; } }
-
-#section-7-team {
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 60px; }
-  #section-7-team h3 {
-    color: #283d50;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 20px; }
-  #section-7-team p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
-    color: #556877;
-    padding-bottom: 60px;
-    width: 50%; }
-  #section-7-team .section-7-team-container-img {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-    #section-7-team .section-7-team-container-img .section-7-team-images {
-      width: 255px;
-      height: 255px;
-      position: relative;
-      border-radius: 50%;
-      background-position: center;
-      background-size: cover;
-      overflow: hidden;
-      margin: 10px; }
-      #section-7-team .section-7-team-container-img .section-7-team-images img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover; }
-      #section-7-team .section-7-team-container-img .section-7-team-images .section-7-team-images-overlay {
-        background-color: rgba(0, 62, 128, 0.7);
-        color: #FFF;
-        position: relative;
-        width: 255px;
-        height: 255px;
->>>>>>> f7b8d1d2ae8b905f6f5f2c19ac2fc3eff5e0e98b
         display: flex;
         justify-content: center;
         align-items: center;
@@ -968,12 +597,12 @@ li {
           align-items: center;
           flex-direction: column; }
           html body #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info {
-            display: flex;
-            width: 750px; }
+            display: flex; }
             html body #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info .section-6-testimonials-info-img {
               margin-right: 20px;
-              text-align: center;
-              vertical-align: middle; }
+              display: flex;
+              justify-content: center;
+              align-items: center; }
               html body #section-6-testimonials .section-6-testimonials-container .section-6-testimonials-subcontainer .section-6-testimonials-info .section-6-testimonials-info-img img {
                 height: 120px;
                 width: 120px;
@@ -1014,10 +643,9 @@ li {
           color: #007BFF; }
       @media (min-width: 751px) and (max-width: 900px) {
         html body #section-6-testimonials .section-6-testimonials-subcontainer {
-          width: 80%;
           margin: 0 30px 0; }
           html body #section-6-testimonials .section-6-testimonials-subcontainer .section-6-testimonials-info {
-            width: 700;
+            width: 700px;
             padding: 0 30px 0; } }
       @media (max-width: 750px) {
         html body #section-6-testimonials .section-6-testimonials-info {
@@ -1029,7 +657,6 @@ li {
             align-items: center;
             padding: 20px 0; }
             html body #section-6-testimonials .section-6-testimonials-info .section-6-testimonials-info-text p {
-              width: 60%;
               text-align: center; } }
     html body #section-7-team {
       background-color: #FFF;
