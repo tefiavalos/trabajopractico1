@@ -23,19 +23,22 @@ nav {
   left: 0;
   right: 0;
   z-index: 3; }
-  nav .img-tp img {
+  nav .nav-img-ada img {
     margin: 7px 0px;
+    padding-left: 15x;
     max-height: 26px; }
-  nav .img-tp .img-logo {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer; }
-  nav .menu-pc {
+    nav .nav-img-ada img .nav-img-ada-logo {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer; }
+  nav .hamburguer {
+    display: none; }
+  nav .nav-menu-pc {
     display: flex;
     align-items: center;
     justify-content: space-around;
     transition: 0.5s; }
-    nav .menu-pc a {
+    nav .nav-menu-pc a {
       color: #004289;
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
@@ -43,9 +46,9 @@ nav {
       text-decoration: none;
       padding: 10px 15px;
       transition: 0.3s; }
-      nav .menu-pc a i {
+      nav .nav-menu-pc a i {
         padding-left: 10px; }
-      nav .menu-pc a .dropdown {
+      nav .nav-menu-pc a .dropdown {
         margin: 0;
         background-color: #FFF;
         width: 180px;
@@ -56,25 +59,29 @@ nav {
         padding: 10px 0;
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
         transition: ease all 0.5s; }
-        nav .menu-pc a .dropdown ul li {
-          margin: 0;
-          padding: 10px 20px;
-          font-size: 13px;
-          color: #004289; }
-          nav .menu-pc a .dropdown ul li i {
-            padding-left: 10px; }
-    nav .menu-pc a:hover {
+        nav .nav-menu-pc a .dropdown ul {
+          list-style: none;
+          margin: 0; }
+          nav .nav-menu-pc a .dropdown ul li {
+            padding: 10px 10px 10px 0px;
+            font-size: 13px;
+            color: #004289; }
+            nav .nav-menu-pc a .dropdown ul li i {
+              padding-left: 10px; }
+    nav .nav-menu-pc a:hover {
       color: #007BFF; }
-    nav .menu-pc .dr:hover .dropdown {
+    nav .nav-menu-pc .dr:hover .dropdown {
       display: block; }
-  @media (max-width: 960px) {
-    nav nav {
-      height: 60px;
-      padding: 10px 0; }
-    nav .menu-pc {
-      display: none; }
+
+@media (max-width: 960px) {
+  nav {
+    height: 60px;
+    padding: 10px 20px; }
     nav .hamburguer {
-      display: block; } }
+      display: block;
+      padding: 10px 20px; }
+    nav .nav-menu-pc {
+      display: none; } }
 
 #menu {
   background-color: rgba(17, 19, 20, 0.8);
@@ -87,41 +94,30 @@ nav {
   left: -350px;
   transition: all 0.5s;
   z-index: 4; }
-
-a {
-  font-weight: 600;
-  color: #1445b3;
-  font-size: 15px; }
-
-ul {
-  padding-left: 20px; }
-
-li {
-  list-style: none;
-  padding-bottom: 10px;
-  font-weight: 600; }
-  li a {
-    text-decoration: none;
+  #menu .mobile-menu ul {
+    padding-left: 20px; }
+    #menu .mobile-menu ul li {
+      list-style: none;
+      padding-bottom: 10px;
+      font-weight: 600; }
+      #menu .mobile-menu ul li a {
+        text-decoration: none;
+        color: #FFF; }
+  #menu .close .fas.fa-times {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    display: none;
     color: #FFF; }
 
 #menu:target {
   left: 0px; }
-
-.fas.fa-times {
-  position: absolute;
-  top: 20px;
-  left: 300px;
-  display: none;
-  color: #FFF; }
-
-#menu:target .fas.fa-times {
-  display: block; }
-
-> a {
-  padding-left: 10px; }
-
-.hamburguer {
-  display: none; }
+  #menu:target .hamburguer {
+    display: none; }
+  #menu:target .close a {
+    padding-left: 10px; }
+    #menu:target .close a .fas.fa-times {
+      display: block; }
 
 #section-1-intro {
   display: flex;
@@ -970,7 +966,7 @@ li {
 @media (max-width: 768px) {
   .hamburguer {
     display: block; }
-  .menu-pc {
+  .nav-menu-pc {
     display: none; }
   #section-9-contact-us .section-9-contact-us__main .section-9-contact-us__main--right .section-9-contact-us__information {
     flex-direction: column;

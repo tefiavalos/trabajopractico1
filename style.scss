@@ -89,26 +89,26 @@ body {
     left: 0;
     right: 0;
     z-index: 3;
-      
-    .img-tp{
-        img {
+    .nav-img-ada{
+      img {
         margin: 7px 0px;
+        padding-left: 15x;
         max-height: 26px;
-        }
-    
-      .img-logo{
-        max-width:100%;
-        height: auto;
-        cursor: pointer;
+        .nav-img-ada-logo{
+          max-width:100%;
+          height: auto;
+          cursor: pointer;
         }
       }
-
-      .menu-pc {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        transition: 0.5s;
-
+    }
+    .hamburguer {
+      display: none;
+    }
+    .nav-menu-pc {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      transition: 0.5s;
         a {
           color: #004289;
           font-family: $title-font;
@@ -132,51 +132,42 @@ body {
             box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
             transition: ease all 0.5s;
             ul { 
+              list-style: none;
+              margin:0;
               li {
-                margin:0;
-                padding: 10px 20px;
+                padding: 10px 10px 10px 0px;
                 font-size: 13px;
                 color: #004289;
                 i {
                   padding-left: 10px;
                 }
               }
-              }  
-        
-          a:hover {
-            color: $main-button-color;
+            }  
           }
-          .dr:hover{
-            .dropdown{
-              display:block;
-            }
-          }  
         }
-        a:hover {
-          color: #007BFF;
-        }
-        .dr:hover{
-          .dropdown{
-            display:block;
-          }
-        } 
+      a:hover {
+        color: $main-button-color;
       }
-
-      @media (max-width: 960px) {
-        nav {
-          height: 60px;
-          padding: 10px 0;
-        }
-        .menu-pc {
-          display: none;
-        }
-        .hamburguer{
+      .dr:hover{
+        .dropdown{
           display:block;
         }
-        
+      }  
+    }
+  }
+
+  @media (max-width: 960px) {
+    nav {
+      height: 60px;
+      padding: 10px 20px;
+      .hamburguer{
+        display:block;
+        padding: 10px 20px;
       }
-     
-    
+      .nav-menu-pc {
+        display: none;
+      }
+    }
   }
 
   #menu {
@@ -190,52 +181,44 @@ body {
     left: -350px;
     transition: all 0.5s;
     z-index: 4;
+    .mobile-menu {
+      ul{
+        padding-left:20px;
+        li{
+          list-style:none;
+          padding-bottom:10px;
+          font-weight: 600;
+          a{
+            text-decoration: none;
+            color: $secondary-color;
+          }
+        }
+      }
     }
-
-  a{
-    font-weight: 600;
-    color: $main-color;
-    font-size: 15px;
-  }
-
-  ul{
-      padding-left:20px;
-  }
-  
-
-  li{
-      list-style:none;
-      padding-bottom:10px;
-      font-weight: 600;
-      a{
-        text-decoration: none;
+    .close {
+      .fas.fa-times{
+        position:absolute;
+        top: 20px;
+        left:300px;
+        display:none;
         color: $secondary-color;
       }
+    }  
   }
 
   #menu:target {
-    left: 0px
-  }
-
-  .fas.fa-times{
-    position:absolute;
-    top: 20px;
-    left:300px;
-    display:none;
-    color: $secondary-color;
-}
-
-  #menu:target .fas.fa-times{
-      display:block;
-  }
-
-  >a{
-      padding-left: 10px;
-  }
-
-  .hamburguer{
+    left: 0px;
+    .hamburguer{
       display:none;
-      
+    }
+    .close {
+      a{
+        padding-left: 10px;
+        .fas.fa-times{
+            display:block;
+        }
+      }
+    }
   }
 
   #section-1-intro{
@@ -480,7 +463,6 @@ body {
       }
     }
   
-
   #section-3-services {
     background-color: #ECF5FF;
     padding: 60px 60px;
@@ -709,9 +691,6 @@ body {
     }
 
   }
-
-      
-
 
   #section-5-portfolio {
     background-color:$secondary-color;
@@ -1054,8 +1033,6 @@ body {
       }
     }
   }
-    
-    
   
   #section-8-our-clients {
     background-color: #ECF5FF;
@@ -1125,7 +1102,6 @@ body {
   }
 }
   
-
   #section-9-contact-us {
     background-color:$secondary-color;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -1232,7 +1208,6 @@ body {
     }
   }
 
-   //@media (max-width:900px) El valor es 960!//
   @media (max-width:960px) {
 
     #section-9-contact-us {
@@ -1266,13 +1241,12 @@ body {
     }
   }
 
-  //@media (max-width:600px) El valor es 768!//
   @media (max-width:768px){
     .hamburguer{
         display:block;
     }
 
-    .menu-pc{
+    .nav-menu-pc{
         display:none;
     }
 
@@ -1501,7 +1475,6 @@ body {
     }
   }
 
-
 @media(max-width:768px){
 
   #footer{
@@ -1542,4 +1515,3 @@ body {
           }
         }
       }
-    }
