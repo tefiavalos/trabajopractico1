@@ -575,6 +575,7 @@ body {
       }
     }
   }
+  
 
   #section-4-why-choose-us {
     background-color: #004A99;
@@ -1334,7 +1335,7 @@ body {
     }
   }
 
-  @media (max-width:768px){
+  @media (max-width:760px){
     .hamburguer{
         display:block;
     }
@@ -1358,8 +1359,8 @@ body {
       .section-3-services-container-cards {
         .section-3-services-cards {
           display: flex;
-          width: 70%;
-          padding: 20px;
+          width: 80%;
+          padding-top: 50px;
         }
       }
     }

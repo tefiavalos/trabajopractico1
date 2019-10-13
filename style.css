@@ -1040,7 +1040,7 @@ nav {
     width: 45%;
     margin: 15px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .hamburguer {
     display: block; }
   .nav-menu-pc {
@@ -1052,8 +1052,8 @@ nav {
     padding: 60px 20px; }
     #section-3-services .section-3-services-container-cards .section-3-services-cards {
       display: flex;
-      width: 70%;
-      padding: 20px; } }
+      width: 80%;
+      padding-top: 50px; } }
 
 .arrow {
   border: none;
