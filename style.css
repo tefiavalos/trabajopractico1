@@ -508,31 +508,37 @@ nav {
       #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info p {
         font-size: 14px;
         color: #cce5ff; }
-  @media (max-width: 1000px) {
-    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-      width: 250px;
-      margin: 0 10px; } }
-  @media (max-width: 900px) {
-    #section-4-why-choose-us .section-4-why-choose-us-container-box {
-      flex-direction: column; }
-      #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-        margin-bottom: 20px;
-        width: 600px; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup {
-      display: flex;
-      flex-wrap: wrap;
-      width: 65%; }
-      #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
-        padding: 20px; } }
-  @media (max-width: 650px) {
-    #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-      width: 350px; }
-    #section-4-why-choose-us .section-4-why-choose-us-countup {
-      flex-direction: column;
-      align-items: center; } }
-  @media (max-width: 470px) {
-    #section-4-why-choose-us #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
-      width: 100%; } }
+
+@media (max-width: 1000px) {
+  .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
+    width: 250px;
+    margin: 0 10px; } }
+
+@media (max-width: 900px) {
+  .section-4-why-choose-us-container-box {
+    flex-direction: column; }
+    .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
+      margin-bottom: 20px;
+      width: 600px; }
+  .section-4-why-choose-us-countup {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%; }
+    .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
+      padding: 20px; } }
+
+@media (max-width: 650px) {
+  #section-4-why-choose-us .section-4-why-choose-us-container-box .section-4-why-choose-us-box {
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 10px; }
+  #section-4-why-choose-us .section-4-why-choose-us-countup {
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: flex-start; }
+    #section-4-why-choose-us .section-4-why-choose-us-countup .section-4-why-choose-us-countup-info {
+      padding: 0;
+      text-align: left; } }
 
 #section-5-portfolio {
   background-color: #FFF;
