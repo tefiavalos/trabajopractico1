@@ -78,7 +78,7 @@ body {
   
   nav {
     background-color: $secondary-color;
-    padding: 20px 60px;
+    padding: 20px 100px;
     width: 100%;
     height: 80px;
     display: flex;
@@ -109,42 +109,69 @@ body {
       align-items: center;
       justify-content: space-around;
       transition: 0.5s;
-        a {
-          color: #004289;
-          font-family: $title-font;
-          font-size: 14px;
-          font-weight: 500;
-          text-decoration: none;
-          padding: 10px 15px;
-          transition: 0.3s; 
-          i {
-          padding-left: 10px;
-          }
-          .dropdown{
+      a {
+        color: #004289;
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: 0.3s; 
+        i {
+        padding-left: 10px;
+        }
+        .dropdown{
+          margin:0;
+          background-color: $secondary-color;
+          width: 150px;
+          height: auto;  
+          display:none;
+          position:absolute;
+          top:50px;
+          padding: 10px 0;
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          transition: ease all 0.5s;
+          ul { 
+            list-style: none;
             margin:0;
-            background-color: $secondary-color;
-            width: 180px;
-            height: auto;  
-            display:none;
-            position:absolute;
-            top:50px;
-            padding: 10px 0;
-            box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-            transition: ease all 0.5s;
-            ul { 
-              list-style: none;
-              margin:0;
-              li {
-                padding: 10px 10px 10px 0px;
-                font-size: 13px;
-                color: #004289;
-                i {
-                  padding-left: 10px;
+            padding-left:20px;
+            li {
+              padding: 10px 10px 10px 0px;
+              font-size: 13px;
+              color: #004289;
+              i {
+                padding-left: 10px;
+              }
+              ul {
+                position: absolute;
+                left: 150px;
+                display: none;
+                margin:0;
+                background-color: $secondary-color;
+                width: 165px;
+                padding: 10px 0px 10px 20px;
+                height: auto;  
+                position:absolute;
+                top:50px;
+                box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+                transition: ease all 0.5s;
+                li {
+                  position: relative;
+                  padding: 10px 10px 10px 0px;
                 }
               }
-            }  
+            }
+            li:hover {
+              color: $main-button-color;
+            }
+            .submenu:hover {
+              ul {
+              display: block;
+              }
+            }
           }
         }
+      }  
       a:hover {
         color: $main-button-color;
       }
@@ -152,8 +179,8 @@ body {
         .dropdown{
           display:block;
         }
-      }  
-    }
+      } 
+    }       
   }
 
   @media (max-width: 960px) {
@@ -796,6 +823,32 @@ body {
       }
     }
   }
+
+  /*@media (max-width: 1960px) {
+    .section-5-portfolio-container-img{
+      .section-5-portfolio-img {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+      }
+    }
+  }
+  @media (max-width: 960px) {  
+    .section-5-portfolio-container-img{
+      .section-5-portfolio-img {
+        flex-basis:50%;
+          max-width: 50%; 
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-5-portfolio-container-img{
+      .section-5-portfolio-img {
+        flex-direction: column;
+      }
+    }
+  }*/
+
 
   #section-6-testimonials {
     padding: 60px 60px;
