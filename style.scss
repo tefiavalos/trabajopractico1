@@ -170,6 +170,12 @@ body {
     }
   }
 
+  @media (max-width:768px){
+    nav{
+      width:100%;
+    }
+  }
+
   #menu {
     background-color: rgba(17, 19, 20, 0.8);
     color: $secondary-color;
@@ -794,6 +800,17 @@ body {
         z-index: 2;
         display: block;  
       }
+    }
+  }
+  @media(max-width:960px){
+    .section-5-portfolio-container-img{
+      width: 50%;
+    }
+  }
+
+  @media(max-width:768px){
+    .section-5-portfolio-container-img{
+      width: 100%;
     }
   }
 

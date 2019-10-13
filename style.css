@@ -83,6 +83,10 @@ nav {
     nav .nav-menu-pc {
       display: none; } }
 
+@media (max-width: 768px) {
+  nav {
+    width: 100%; } }
+
 #menu {
   background-color: rgba(17, 19, 20, 0.8);
   color: #FFF;
@@ -598,6 +602,14 @@ nav {
     #section-5-portfolio .section-5-portfolio-container-img .section-5-portfolio-img:hover .section-5-portfolio-img-overlay {
       z-index: 2;
       display: block; }
+
+@media (max-width: 960px) {
+  .section-5-portfolio-container-img {
+    width: 50%; } }
+
+@media (max-width: 768px) {
+  .section-5-portfolio-container-img {
+    width: 100%; } }
 
 #section-6-testimonials {
   padding: 60px 60px;
