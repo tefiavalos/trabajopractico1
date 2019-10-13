@@ -716,13 +716,22 @@ body {
     }
 
     @media (max-width:470px) {
+      #section-4-why-choose-us{
       .section-4-why-choose-us-container-box{
         .section-4-why-choose-us-box {
-          width:200px;
+          width:100%;
+        }
+      }
+      .section-4-why-choose-us-countup {
+        flex-direction: column;
+        align-items: center;
+        .section-4-why-choose-us-countup-info{
+          align-items:flex-start;
+          padding-left:0;
         }
       }
     }
-
+  }
   }
 
   #section-5-portfolio {
@@ -836,10 +845,13 @@ body {
   }
 
   @media(max-width:768px){
+    #section-5-portfolio{
     .section-5-portfolio-container-img{
       width: 100%;
+      padding:0;
     }
   }
+}
 
   /*@media (max-width: 1960px) {
     .section-5-portfolio-container-img{
