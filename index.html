@@ -24,6 +24,10 @@
             <a href="#section-3-services">Services</a>
             <a href="#section-5-portfolio">Portfolio</a>
             <a href="#section-7-team">Team</a>
+            <!-- "Dr" no es un buen nombre de clase. No queda claro a primer a vista 
+            a que elemento se refiere. Dado que esta involucrado en una interaccion compleja
+            con otros elementos en el css, seria aun mas recomendable que tenga un nombre descriptivo
+            - por ejemplo, "dropdown_container" -->
             <a href="#" class="dr">Drop Down
                 <i class="fas fa-chevron-down"></i>
                 <div class="dropdown">
@@ -66,7 +70,10 @@
     </div>
 
     <section id="section-1-intro">
-        <div class="section-1-intro-img"><img alt="intro image" src="img/intro-img.svg" class="imagen-intro"></div>
+        <div class="section-1-intro-img">
+            <!-- El "alt" debe ser descriptivo. Es para que personas que no pueden ver la imagen aun asi 
+            sepan de que se trata. Llamarla "intro image" es casi ofensivo.  -->
+            <img alt="intro image" src="img/intro-img.svg" class="imagen-intro"></div>
         <div class="section-1-intro-title">
             <h2>We provide <span>solutions</span> for your business!</h2>
             <div class="section-1-intro-button">
@@ -82,6 +89,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
         </main>
+
+        <!-- Cada etiqueta <article> deberia hacer referencia a un articulo en particular, 
+            no a una coleccion de ellos como en este caso -->
         <article class="section-2-container-about">
             <div class="section-2-container-about-articles">
                 <div class="section-2-container-about-text">
@@ -117,6 +127,7 @@
                     </div>
 
                 </div>
+                <!-- El "alt" en la imagen no puede faltar! -->
                 <div class="section-2-container-img"><img src="img/about/about-img.svg"> </div>
 
             </div>
@@ -458,8 +469,6 @@
         </div>
     </section>
 
-
-
     <section id="section-7-team">
         <h3>Team</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
@@ -592,6 +601,11 @@
                         <p>+1 5589 55488 55</p>
                     </div>
                 </div>
+
+                <!-- En el form hay mucho html que solo puede usarse con bootstrap o con javascript - me refiero
+                a las validaciones. Asumo que lo pusieron porque estaba asi en el modelo, pero en general no 
+                es buena idea agregar html que no vamos a usar - un lector de pantalla podria acceder a esta 
+                validacion, por ejemplo, y confundir a quien lo esta usando.  -->
                 <form action="/contact" method="post">
                     <div class="section-9-contact-us__form">
                         <div class="section-9-contact-us__form--name">
@@ -626,6 +640,7 @@
     <button class="arrow">
         <a href="#section-1-intro"><i class="fas fa-chevron-up"></i></a>
     </button>
+
     <footer id="footer">
         <div class="footer-container">
             <div class="bloque1">
